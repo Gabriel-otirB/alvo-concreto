@@ -1,0 +1,57 @@
+.navbar {
+  padding: 1.2rem 0; /* Aumenta a altura da navbar (topo e fundo) */
+  background-color: var(--light-gray-color); /* Cor de fundo cinza claro */
+}
+
+.nav-link-custom {
+  font-size: 1.25rem; /* Aumenta o tamanho da fonte dos links */
+  font-weight: 500;
+  margin-right: 20px; /* Aumenta o espaço entre os links */
+  position: relative;
+  color: var(--black-color); /* Cor padrão */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transição para a cor e zoom */
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  left: 50%; /* Centraliza horizontalmente */
+  bottom: 5px; /* Distância da linha ao texto */
+  width: 0;
+  height: 2px;
+  background-color: var(--black-color); /* Cor da linha animada */
+  transform: translateX(-50%); /* Garante que o ponto inicial seja o centro */
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: var(--black-color); /* Cor do texto ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o tamanho do link com efeito de zoom */
+}
+
+.nav-link-custom:hover::after {
+  width: 100%; /* Linha se estende por todo o texto */
+}
+
+/* Logo */
+.logo {
+  margin-left: 30px; /* Aumenta o espaço à esquerda */
+}
+
+.logo-icon {
+  margin-right: 15px; /* Aumenta o espaço à direita do ícone */
+  font-size: 2rem; /* Aumenta o tamanho do ícone */
+  --fa-animation-duration: 60s; /* Para animação */
+}
+
+nav .logo-text {
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte do texto */
+  font-weight: bold;
+}
+
+nav .logo-text i{
+  color: var(--red-color);
+}
+
+

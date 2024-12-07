@@ -1,0 +1,307 @@
+/* Seção de serviços */
+#service-entrega-concreto {
+    padding-top: 150px; /* Compensa a altura da navbar */
+    padding-bottom: 75px;
+    font-size: 18px;
+}
+
+/* Estilização para o título da marca */
+#service-entrega-concreto .brand-title {
+    text-align: center; /* Centraliza o título */
+    font-size: 2.5rem; /* Tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: var(--red-color); /* Cor principal do título */
+    margin-bottom: 75px; /* Espaçamento inferior */
+    position: relative; /* Para ajustar o ícone */
+}
+
+/* Adiciona uma linha abaixo do título */
+#service-entrega-concreto .brand-title::after {
+    content: ''; /* Cria o conteúdo da linha */
+    position: absolute; /* Posiciona a linha abaixo do título */
+    bottom: -10px; /* Distância da linha para o título */
+    left: 50%; /* Centraliza a linha */
+    width: 0%; /* Inicialmente, a linha tem largura 0 */
+    height: 3px; /* Altura da linha */
+    background-color: var(--red-color); /* Cor da linha */
+    transition: width 0.5s ease-in-out; /* Transição suave */
+    transform: translateX(-50%); /* Ajuste para centralizar a linha */
+}
+
+/* Efeito da linha ao passar o mouse */
+#service-entrega-concreto .brand-title:hover::after {
+    width: 100%; /* A linha se expande para 100% da largura */
+}
+
+/* Estilização para o texto da marca */
+#service-entrega-concreto .logo-text {
+    display: inline-flex; /* Para alinhar o ícone com o texto */
+    align-items: center; /* Centraliza verticalmente o ícone com o texto */
+    color: var(--light-gray-color);
+}
+
+/* Estilização para o ícone */
+#service-entrega-concreto .logo-text i {
+    font-size: 1.5rem; /* Tamanho do ícone */
+    color: var(--red-color); /* Cor do ícone */
+    margin-left: 5px; /* Espaçamento entre o texto e o ícone */
+    transition: transform 0.3s ease; /* Suaviza a animação */
+}
+
+/* Título principal da seção */
+#service-entrega-concreto .main-title {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--light-gray-color);
+}
+
+/* Descrição dos serviços */
+.service-description {
+    font-size: 1.125rem; /* Equivalente a 18px */
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: var(--light-gray-color);
+}
+
+/* Lista de benefícios */
+.service-benefits {
+    list-style: none; /* Remove marcadores padrão */
+    padding: 0; /* Remove espaçamento interno */
+    margin: 0; /* Remove espaçamento externo */
+}
+
+.service-benefits li {
+    margin-bottom: 10px;
+    color: var(--light-gray-color);
+    font-size: 1.125rem; /* Equivalente a 18px */
+    line-height: 1.4;
+}
+
+#service-entrega-concreto .service-benefits i {
+    font-size: 1.125rem;
+    color: var(--red-color);
+    margin-right: 5px;
+    animation: fa-beat 3s infinite; /* Animação para os ícones */
+}
+
+/* Efeito de movimento */
+#service-entrega-concreto .img-fluid {
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    border: solid 0.2rem var(--red-color);
+    transform: translateZ(0); /* Necessário para otimizar o movimento */
+}
+
+/* Efeito de movimento no hover */
+#service-entrega-concreto .img-fluid:hover {
+    transform: translateY(-10px); /* Move a imagem para cima */
+}
+
+/* Botão de contato */
+#service-entrega-concreto .btn-services {
+    margin-top: 20px;
+}
+
+#service-entrega-concreto .btn-contact {
+    display: inline-block;
+    background-color: var(--red-color); /* Cor do botão */
+    color: var(--light-gray-color); /* Cor do texto */
+    padding: 10px 20px;
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transição para zoom */
+}
+
+/* Efeito de zoom no botão ao passar o mouse */
+#service-entrega-concreto .btn-contact:hover {
+    background-color: var(--dark-red-color); /* Cor ao passar o mouse */
+    transform: scale(1.02); /* Efeito de zoom */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #service-entrega-concreto {
+        padding-top: 140px; /* Espaçamento maior para telas pequenas */
+    }
+
+    .service-description, .service-benefits {
+        text-align: left; /* Alinha texto à esquerda */
+    }
+}
+
+/*CONSULTORIA TÉCNICA*/
+#service-consultoria-tecnica {
+    padding-bottom: 75px;
+    font-size: 18px;
+}
+
+#service-consultoria-tecnica .container {
+    padding-top: 75px;
+}
+
+/* Estilização para o título da marca */
+#service-consultoria-tecnica .brand-title {
+    text-align: center; /* Centraliza o título */
+    font-size: 2.5rem; /* Tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: var(--red-color); /* Cor principal do título */
+    margin-top: 30px;
+    margin-bottom: 35px; /* Espaçamento inferior */
+    position: relative; /* Para ajustar o ícone */
+}
+
+/* Título principal da seção */
+#service-consultoria-tecnica .main-title {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--light-gray-color);
+}
+
+/* Descrição dos serviços */
+#service-consultoria-tecnica .service-description {
+    font-size: 1.125rem; /* Equivalente a 18px */
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: var(--light-gray-color);
+}
+
+/* Lista de benefícios */
+#service-consultoria-tecnica .service-benefits {
+    list-style: none; /* Remove marcadores padrão */
+    padding: 0; /* Remove espaçamento interno */
+    margin: 0; /* Remove espaçamento externo */
+}
+
+#service-consultoria-tecnica .service-benefits li {
+    margin-bottom: 10px;
+    color: var(--light-gray-color);
+    font-size: 1.125rem; /* Equivalente a 18px */
+    line-height: 1.4;
+}
+
+#service-consultoria-tecnica .service-benefits i {
+    font-size: 1.125rem;
+    color: var(--red-color);
+    margin-right: 5px;
+    animation: fa-flip 3s infinite; /* Animação para os ícones */
+}
+
+/* Efeito de movimento */
+#service-consultoria-tecnica .img-fluid {
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    border: solid 0.2rem var(--red-color);
+    transform: translateZ(0); /* Necessário para otimizar o movimento */
+}
+
+/* Efeito de movimento no hover */
+#service-consultoria-tecnica .img-fluid:hover {
+    transform: translateY(-10px); /* Move a imagem para cima */
+}
+
+/* Efeito de zoom no botão ao passar o mouse */
+#service-consultoria-tecnica .btn-contact:hover {
+    background-color: var(--dark-red-color); /* Cor ao passar o mouse */
+    transform: scale(1.02); /* Efeito de zoom */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #service-consultoria-tecnica {
+        padding-top: 140px; /* Espaçamento maior para telas pequenas */
+    }
+
+    .service-description, .service-benefits {
+        text-align: left; /* Alinha texto à esquerda */
+    }
+}
+
+/*BOMBAS DE CONCRETO*/
+#service-bombas-concreto {
+    padding-bottom: 75px;
+    font-size: 18px;
+}
+
+#service-bombas-concreto .container {
+    padding-top: 75px;
+}
+
+/* Estilização para o título da marca */
+#service-bombas-concreto .brand-title {
+    text-align: center; /* Centraliza o título */
+    font-size: 2.5rem; /* Tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: var(--red-color); /* Cor principal do título */
+    margin-top: 30px;
+    margin-bottom: 35px; /* Espaçamento inferior */
+    position: relative; /* Para ajustar o ícone */
+}
+
+/* Título principal da seção */
+#service-bombas-concreto .main-title {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--light-gray-color);
+}
+
+/* Descrição dos serviços */
+#service-bombas-concreto .service-description {
+    font-size: 1.125rem; /* Equivalente a 18px */
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: var(--light-gray-color);
+}
+
+/* Lista de benefícios */
+#service-bombas-concreto .service-benefits {
+    list-style: none; /* Remove marcadores padrão */
+    padding: 0; /* Remove espaçamento interno */
+    margin: 0; /* Remove espaçamento externo */
+}
+
+#service-bombas-concreto .service-benefits li {
+    margin-bottom: 10px;
+    color: var(--light-gray-color);
+    font-size: 1.125rem; /* Equivalente a 18px */
+    line-height: 1.4;
+}
+
+#service-bombas-concreto .service-benefits i {
+    font-size: 1.125rem;
+    color: var(--red-color);
+    margin-right: 5px;
+    animation: fa-beat 3s infinite; /* Animação para os ícones */
+}
+
+/* Efeito de movimento */
+#service-bombas-concreto .img-fluid {
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    border: solid 0.2rem var(--red-color);
+    transform: translateZ(0); /* Necessário para otimizar o movimento */
+}
+
+/* Efeito de movimento no hover */
+#service-bombas-concreto .img-fluid:hover {
+    transform: translateY(-10px); /* Move a imagem para cima */
+}
+
+
+/* Efeito de zoom no botão ao passar o mouse */
+#service-bombas-concreto .btn-contact:hover {
+    background-color: var(--dark-red-color); /* Cor ao passar o mouse */
+    transform: scale(1.02); /* Efeito de zoom */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #service-bombas-concreto {
+        padding-top: 140px; /* Espaçamento maior para telas pequenas */
+    }
+
+    .service-description, .service-benefits {
+        text-align: left; /* Alinha texto à esquerda */
+    }
+}

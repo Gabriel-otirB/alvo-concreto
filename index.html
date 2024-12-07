@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/b0dc7333f6.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/carousel.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <title>Alvo Concreto</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="container nav-container">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <a class="navbar-brand d-flex align-items-center logo" href="#">
+                    <i class="fa-solid fa-helmet-safety fa-flip logo-icon"></i>
+                    <span class="logo-text">Alvo<i class="fa-solid fa-location-crosshairs"></i>Concreto</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link nav-link-custom" href="#">Início</a>
+                        <a class="nav-item nav-link nav-link-custom" href="services.html">Serviços</a>
+                        <a class="nav-item nav-link nav-link-custom" href="#">Contato</a>
+                        <a class="nav-item nav-link nav-link-custom" href="#">Sobre nós</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- SLIDES -->
+    <main>
+        <section id="carousel" alt="carousel-section">
+            <div id="mainCarousel" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="8000">
+                        <img src="./assets/img/slide1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Transformando Sua Obra em Realidade</h5>
+                            <p>Oferecemos soluções em concreto de alta qualidade para projetos robustos e seguros.</p>
+                            <a href="#" class="main-btn">Fazer Orçamento</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="8000">
+                        <img src="./assets/img/slide2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Concreto de Alta Performance</h5>
+                            <p>Garanta a durabilidade e resistência da sua obra com nossos produtos inovadores.</p>
+                            <a href="#" class="main-btn">Fazer Orçamento</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="8000">
+                        <img src="./assets/img/slide3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Construa com Segurança e Qualidade</h5>
+                            <p>Com a Alvo Concreto, sua obra será entregue no prazo e com a máxima qualidade.</p>
+                            <a href="#" class="main-btn">Fazer Orçamento</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section id="about-area" class="bg-default">
+            <div class="div-line"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title"><span class="logo-text">Alvo<i
+                                    class="fa-solid fa-location-crosshairs"></i>Concreto</span></h3>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="./assets/img/about-us.jpg" alt="Concreteira Alvo Concreto">
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3 class="about-title">Conheça a Alvo Concreto</h3>
+                        <p>Na Alvo Concreto, transformamos o mercado da construção civil com soluções em concreto de
+                            alta qualidade. Nosso objetivo é garantir a resistência e segurança das obras, usando as
+                            melhores práticas e inovação tecnológica.</p>
+                        <p>Com uma sólida experiência, nossa missão é oferecer produtos e serviços que atendam às
+                            exigências mais rigorosas, sempre com pontualidade e responsabilidade ambiental.</p>
+                        <p>Confira os diferenciais que tornam a Alvo Concreto a escolha ideal para sua obra:</p>
+                        <ul id="about-list">
+                            <li><i class="fas fa-check "></i><span>Concreto de alta resistência e durabilidade</span>
+                            </li>
+                            <li><i class="fas fa-check"></i><span>Soluções inovadoras para cada tipo de projeto</span>
+                            </li>
+                            <li><i class="fas fa-check"></i><span>Atendimento personalizado com foco nas necessidades do
+                                    cliente</span></li>
+                            <li><i class="fas fa-check"></i><span>Compromisso com a sustentabilidade e práticas
+                                    eco-friendly</span></li>
+                            <li><i class="fas fa-check"></i><span>Entregas pontuais e com garantia de qualidade</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-saiba-mais">Veja mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="bg-secondary" id="services-area">
+            <div class="div-line"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nossos Serviços</h3>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-truck"></i>
+                            <h4>Entrega de Concreto</h4>
+                            <p>Oferecemos serviços de entrega pontual de concreto em qualquer lugar da cidade,
+                                garantindo agilidade e eficiência.</p>
+                            <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-hard-hat"></i>
+                            <h4>Consultoria Técnica</h4>
+                            <p>Nossa equipe especializada oferece suporte técnico para garantir a escolha do
+                                concreto ideal para o seu projeto.</p>
+                            <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-tools"></i>
+                            <h4>Bombas de Concreto</h4>
+                            <p>Disponibilizamos equipamentos modernos para aplicação de concreto em áreas de difícil
+                                acesso com precisão e segurança.</p>
+                            <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-calendar-check"></i>
+                            <h4>Planejamento de Obras</h4>
+                            <p>Ajudamos a planejar suas obras com precisão, otimizando recursos e reduzindo prazos
+                                de execução.</p>
+                            <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-drafting-compass"></i>
+                            <h4>Projetos Personalizados</h4>
+                            <p>Desenvolvemos soluções de concreto sob medida, atendendo às especificações exclusivas
+                                de cada obra.</p>
+                            <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Garantia de Qualidade</h4>
+                            <p>Realizamos testes rigorosos para assegurar a resistência e durabilidade do concreto
+                                entregue.</p>
+                            <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-recycle"></i>
+                            <h4>Soluções Sustentáveis</h4>
+                            <p>Trabalhamos com materiais eco-friendly para minimizar os impactos ambientais em suas
+                                construções.</p>
+                            <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-cogs"></i>
+                            <h4>Manutenção de Equipamentos</h4>
+                            <p>Realizamos a manutenção preventiva e corretiva de equipamentos para garantir sua
+                                performance e durabilidade.</p>
+                            <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-users-cog"></i>
+                            <h4>Treinamento e Capacitação</h4>
+                            <p>Oferecemos treinamentos para equipes de obra, garantindo o uso adequado e seguro dos
+                                materiais e equipamentos.</p>
+                            <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact-area" class="bg-default">
+            <div class="div-line"></div>
+            <div class="container bg-default">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">
+                            <span class="logo-text">Alvo<i class="fa-solid fa-location-crosshairs"></i>Concreto</span>
+                        </h3>
+                    </div>
+                    <!-- Informações de Contato -->
+                    <div class="col-md-6">
+                        <h3 class="about-title">Contato</h3>
+                        <p>Estamos prontos para atender você! Estamos localizados na Rua da Construção, 123, Centro,
+                            Rio
+                            de Janeiro, RJ.</p>
+                        <p>Estrategicamente bem posicionadas para continuar oferecendo soluções de alta qualidade
+                            para
+                            suas obras com rapidez e eficiência.</p>
+                        <p>Entre em contato conosco para saber mais sobre nossos produtos e serviços:</p>
+                        <ul>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <strong>Telefone:</strong> (21) 01234-5678
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <strong>E-mail:</strong> contato@alvoconcreto.com.br
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Endereço:</strong> Rua da Construção, 123, Centro, Rio de Janeiro, RJ
+                            </li>
+                        </ul>
+                        <h4>Horários de Atendimento</h4>
+                        <ul>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                Segunda a Sexta: 8h às 18h
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                Sábado: 8h às 12h
+                            </li>
+                        </ul>
+                        <div class="btn-container">
+                            <a href="#" class="btn-contact">FALE COM A NOSSA EQUIPE</a>
+                        </div>
+                    </div>
+                    <!-- Imagem -->
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="./assets/img/contact.png" alt="Concreteira Alvo Concreto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="footer-area">
+            <div class="div-line"></div>
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row text-center">
+                        <!-- Contato -->
+                        <div class="col-md-6 mb-3">
+                            <h4>Contato</h4>
+                            <ul class="footer-contact">
+                                <li><i class="fas fa-phone"></i>(21) 01234-5678</li>
+                                <li><i class="fas fa-envelope"></i>contato@alvoconcreto.com.br</li>
+                                <li><i class="fas fa-map-marker-alt"></i> Rua da Construção, 123, Centro, Rio de
+                                    Janeiro, RJ</li>
+                            </ul>
+                        </div>
+                        <!-- Redes sociais -->
+                        <div class="col-md-6 mb-3">
+                            <h4>Siga-nos</h4>
+                            <ul class="footer-socials">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-3">
+                        <div class="col-md-12 dev">
+                            <p>Desenvolvido por <a href="https://github.com/Gabriel-otirB"
+                                    target="_blank">Gabriel-otirB</a>
+                                &copy; 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>

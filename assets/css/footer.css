@@ -1,0 +1,83 @@
+/* Footer */
+.footer-content {
+    background-image: url(../img/background-2.png);
+    color: var(--light-gray-color);
+    padding: 40px 0;
+    background-size: cover; /* Certifica-se de cobrir toda a área */
+    background-position: bottom; /* Centraliza a imagem */
+}
+
+.footer-content h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--dark-gray-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Itens de contato e sociais */
+.footer-contact,
+.footer-socials {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-contact li,
+.footer-socials li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--dark-gray-color);
+}
+
+.footer-contact i,
+.footer-socials i {
+    color: var(--red-color);
+    margin-right: 10px;
+}
+
+.footer-socials i {
+    margin-right: 0;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-socials li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer-socials a {
+    color: var(--dark-gray-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.5s ease;
+}
+
+.footer-socials a:hover {
+    color: var(--red-color);
+}
+
+/* Espaçamento para o desenvolvedor */
+.footer-content .text-center p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: var(--footer-dev-gray);
+}
+
+.footer-content .dev a {
+    color: var(--red-color);
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.footer-content .dev a:hover {
+    color: var(--dark-gray-color);
+    text-decoration: none;
+}

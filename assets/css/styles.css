@@ -1,0 +1,453 @@
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p, li {
+  color: var(--light-gray-color);
+  font-size: 18px; /* Aumentando o tamanho do texto do conteúdo */
+  font-weight: bold; /* Deixando o texto em negrito */
+}
+
+.bg-default {
+  background-color: var(--dark-gray-color);
+  background-image: url(../img/background.png);
+  background-size: cover; /* Certifica-se de cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+}
+
+.bg-secondary {
+  background-color: var(--light-gray-color);
+  background-image: url(../img/background-2.png); /* Corrigindo para background-image */
+  background-size: cover; /* Certifica-se de cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+}
+
+.div-line {
+    background-color: var(--red-color);
+    height: 4px;
+    width: 100%;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo-text i{
+  color: var(--red-color);
+}
+
+/* ABOUT US */
+.main-title {
+  color: var(--light-gray-color);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+#about-area .main-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--light-gray-color);
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+#about-area .main-title .logo-text {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-area .main-title .logo-text i {
+  margin: 0 0.1rem;
+  vertical-align: middle;
+}
+
+/* Sobre Nós Título */
+.about-title {
+  font-size: 3rem;
+  color: var(--light-gray-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.about-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--light-gray-color);
+  transition: width 0.5s ease-in-out;
+}
+
+.about-title:hover::after {
+  width: 100%;
+}
+
+/* Conteúdo da Seção "about-area" */
+#about-area .container {
+  padding-bottom: 3rem;
+  color: var(--light-gray-color);
+}
+
+#about-area ul li i {
+  color: var(--green-color);
+}
+
+#about-area .row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#about-area .col-md-6 img {
+  border: 0.2rem solid var(--red-color);
+  width: 80%;
+  max-width: 650px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 40px;
+}
+
+#about-area .col-md-6 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Lista na Seção "about-area" */
+ul#about-list {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul#about-list li {
+  margin-left: 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+ul#about-list li i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+ul#about-list li span {
+  margin-left: 0.3rem;
+}
+
+/* Estilização do botão na área "sobre" */
+#about-area .btn-saiba-mais {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: var(--red-color);
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+#about-area .btn-saiba-mais:hover {
+  background-color: var(--red-color); /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumento do botão ao passar o mouse */
+}
+
+/* SERVIÇOS */
+#services-area .main-title {
+  margin-top: 1rem;
+  font-size: 4rem;
+  color: var(--dark-gray-color);
+  text-align: center;
+  position: relative;
+}
+
+#services-area .main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: var(--dark-gray-color);
+  transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  transform: translateX(-50%); /* Centraliza a linha */
+}
+
+#services-area .main-title:hover::after {
+  width: 100%; /* A linha se expande para 100% */
+  left: 50%; /* Deixa a linha centralizada */
+  transform: translateX(-50%); /* Mantém a centralização durante o efeito de expansão */
+}
+
+/* Atualizações nos Service Boxes */
+#services-area .row {
+  margin-top: 0;
+}
+
+#services-area .service-box {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-box {
+  position: relative;
+  text-align: center;
+  padding: 1.5rem; /* Reduzi o padding */
+  margin: 0.5rem auto; /* Menor margem para otimizar espaço */
+  background: #fff;
+  border-radius: 8px; /* Reduzi o arredondamento */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Suavizei a sombra */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 250px; /* Reduzi o tamanho máximo */
+}
+
+.service-box:hover {
+  transform: translateY(-8px) scale(1.02); /* Menor elevação e zoom */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ajustei o efeito de hover */
+}
+
+.service-box i {
+  font-size: 25px; /* Reduzi o tamanho do ícone */
+  margin-bottom: 1rem; /* Menor espaçamento inferior */
+  color: var(--dark-gray-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.service-box:hover i {
+  color: var(--black-color); /* Cor ao passar o mouse */
+  transform: scale(1.1); /* Zoom menor no ícone */
+}
+
+.service-box h4 {
+  font-size: 1.8rem; /* Reduzi o tamanho do título */
+  margin-bottom: 0.8rem; /* Menor espaçamento inferior */
+  color: var(--dark-gray-color);
+  transition: color 0.3s ease;
+}
+
+.service-box:hover h4 {
+  color: var(--black-color); /* Cor ao passar o mouse */
+}
+
+.service-box p {
+  font-size: 1.2rem; /* Diminuí o texto */
+  color: var(--gray-color, #666);
+  line-height: 1.4; /* Menor espaçamento entre linhas */
+}
+
+/* Gradiente de fundo nos boxes ao passar o mouse */
+.service-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 123, 255, 0.1), rgba(0, 123, 255, 0.15));
+  opacity: 0;
+  z-index: -1; /* Mantém o gradiente atrás do conteúdo */
+  transition: opacity 0.3s ease;
+}
+
+.service-box:hover::before {
+  opacity: 1; /* Gradiente visível ao passar o mouse */
+}
+
+/* Estilização do botão "Saiba Mais" na área de serviços */
+.service-box .btn-saiba-mais {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: var(--dark-gray-color);
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.service-box .btn-saiba-mais:hover {
+  background-color: var(--red-color);
+  transform: scale(1.05);
+}
+
+/* CONTACT */
+#contact-area h3 {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+#contact-area i {
+  margin: 0 0.1rem ;
+}
+
+#contact-area img {
+  border-radius: 1rem; /* Arredondar a borda da imagem */
+  border: 0.2rem solid var(--red-color);
+}
+
+/* Efeito de hover no título "Horários de Atendimento" */
+#contact-area h4 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--light-gray-color);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+}
+
+#contact-area h4::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: var(--light-gray-color);
+  bottom: -5px; /* Posiciona a linha abaixo do texto */
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+#contact-area h4:hover::after {
+  width: 100%; /* Linha cresce para 100% da largura do texto */
+}
+
+/* Efeito de hover nas li da seção de contato */
+#contact-area ul li:hover {
+  color: var(--red-color); /* Mudança de cor no texto ao passar o mouse */
+  transform: translateX(5px); /* Pequeno movimento para a direita */
+  transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
+}
+
+#contact-area ul {
+  display: flex;
+  flex-direction: column; /* Garantindo que as li fiquem em uma coluna */
+  align-items: flex-start; /* Alinhando as li à esquerda */
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#contact-area ul li i {
+  margin-right: 0.5rem; /* Espaço entre o ícone e o texto */
+  font-size: 1.2rem; /* Tamanho do ícone */
+  color: var(--red-color); /* Cor do ícone */
+}
+
+#contact-area .btn-container {
+  text-align: center; /* Centraliza o botão dentro do contêiner */
+}
+
+#contact-area .btn-contact {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 3.5rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: var(--red-color);
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact-area .btn-contact:hover {
+  background-color: var(--red-color);
+  transform: scale(1.05);
+}
+
+/* Ajuste de responsividade para a seção de contato */
+@media (max-width: 768px) {
+  #contact-area ul li {
+    font-size: 1rem; /* Diminui o tamanho do texto nas li para telas pequenas */
+  }
+
+  #contact-area .btn-contact {
+    font-size: 1rem; /* Diminui o tamanho do botão para telas pequenas */
+  }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #about-area .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about-area .col-md-6 img {
+    width: 90%;
+    margin-left: 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .service-box {
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  .service-box i {
+    font-size: 30px; /* Aumentando o ícone para telas menores */
+  }
+
+  .service-box h4 {
+    font-size: 1.5rem;
+  }
+
+  .service-box p {
+    font-size: 1rem;
+  }
+
+  .service-box .btn-saiba-mais {
+    font-size: 1rem;
+  }
+}
+
