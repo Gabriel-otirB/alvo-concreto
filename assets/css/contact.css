@@ -1,0 +1,156 @@
+/* CONTACT */
+#contact-area h3 {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+#contact-area i {
+  margin: 0 0.1rem ;
+}
+
+/* Imagem */
+#contact-area img {
+  border-radius: 1rem;
+  border: 0.2rem solid var(--red-color);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+  will-change: transform;
+  backface-visibility: hidden;
+  image-rendering: smooth; /* Tenta renderizar a imagem de forma mais suave */
+}
+
+#contact-area img:hover {
+  transform: scale(1.02) rotate(-0.5deg); /* Aumenta e rotaciona a imagem suavemente */
+}
+
+/* Mapa */
+#contact-area .map-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Altura inicial do mapa */
+  margin-top: 2rem; /* Espaço superior */
+  margin-bottom: 6rem;
+  border-radius: 1rem; /* Bordas arredondadas no mapa */
+  overflow: hidden; /* Para garantir que nada ultrapasse as bordas arredondadas */
+  border: 0.2rem solid var(--red-color); /* Adicionando borda no mapa */
+}
+
+#contact-area .map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* O mapa ocupa toda a largura do contêiner */
+  height: 100%; /* O mapa ocupa toda a altura do contêiner */
+  border-radius: 1rem; /* Arredonda os cantos do mapa */
+}
+
+#contact-area ul li a {
+  font-size: 18px;
+  color: var(--light-gray-color);
+  text-decoration: none;
+}
+
+/* Efeito de hover no título "Horários de Atendimento" */
+#contact-area h4 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--light-gray-color);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+}
+
+#contact-area h4::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: var(--light-gray-color);
+  bottom: -5px; /* Posiciona a linha abaixo do texto */
+  left: 0;
+  transition: width 0.6s ease;
+}
+
+#contact-area h4:hover::after {
+  width: 100%; /* Linha cresce para 100% da largura do texto */
+}
+
+/* Efeito de hover nas li da seção de contato */
+#contact-area ul li:hover {
+  color: var(--red-color); /* Mudança de cor no texto ao passar o mouse */
+  transform: translateX(5px); /* Pequeno movimento para a direita */
+  transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
+}
+
+#contact-area ul li a:hover {
+  color: var(--red-color); /* Mudança de cor no texto ao passar o mouse */
+}
+
+#contact-area ul {
+  display: flex;
+  flex-direction: column; /* Garantindo que as li fiquem em uma coluna */
+  align-items: flex-start; /* Alinhando as li à esquerda */
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#contact-area ul li i {
+  margin-right: 0.5rem; /* Espaço entre o ícone e o texto */
+  font-size: 1.2rem; /* Tamanho do ícone */
+  color: var(--red-color); /* Cor do ícone */
+}
+
+#contact-area .btn-container {
+  text-align: center; /* Centraliza o botão dentro do contêiner */
+}
+
+#contact-area .btn-contact {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 3.5rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: var(--red-color);
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact-area .btn-contact:hover {
+  background-color: var(--red-color);
+  transform: scale(1.05);
+}
+
+#contact-area div.contact-info {
+  margin-bottom: 70px;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+  #contact-area .map-container {
+    height: 250px; /* Altura do mapa em telas menores */
+  }
+}
+
+
+/* Ajuste de responsividade para a seção de contato */
+@media (max-width: 768px) {
+  #contact-area ul li {
+    font-size: 1rem; /* Diminui o tamanho do texto nas li para telas pequenas */
+  }
+  
+  #contact-area .btn-contact {
+    font-size: 1rem; /* Diminui o tamanho do botão para telas pequenas */
+  }
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+  #contact-area .map-container {
+    height: 250px; /* Altura do mapa em telas menores */
+  }
+}

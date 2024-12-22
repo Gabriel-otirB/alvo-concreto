@@ -22,7 +22,7 @@ p, li {
 }
 
 .bg-default {
-  background-color: var(--dark-gray-color);
+  background-color: var(--bg-default-1);
   background-image: url(../img/background.png);
   background-size: cover; /* Certifica-se de cobrir toda a área */
   background-position: center; /* Centraliza a imagem */

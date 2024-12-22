@@ -1,0 +1,248 @@
+/* Seção de serviços */
+#about-area {
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+#about-area .row.first-row {
+  height: 650px;
+}
+
+/* Espaçamento inferior seções de serviços */
+#about-area .mg-bottom {
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+#about-area .mg-top {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+/* Estilização para o título da marca */
+#about-area .brand-title {
+  text-align: center;
+  /* Centraliza o título */
+  font-size: 2.5rem;
+  /* Tamanho do texto */
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+  color: var(--red-color);
+  /* Cor principal do título */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* Espaçamento inferior */
+  position: relative;
+  /* Para ajustar o ícone */
+}
+
+/* Adiciona uma linha abaixo do título */
+#about-area .brand-title::after {
+  content: '';
+  /* Cria o conteúdo da linha */
+  position: absolute;
+  /* Posiciona a linha abaixo do título */
+  bottom: -10px;
+  /* Distância da linha para o título */
+  left: 50%;
+  /* Centraliza a linha */
+  width: 0%;
+  /* Inicialmente, a linha tem largura 0 */
+  height: 3px;
+  /* Altura da linha */
+  background-color: var(--red-color);
+  /* Cor da linha */
+  transition: width 0.5s ease-in-out;
+  /* Transição suave */
+  transform: translateX(-50%);
+  /* Ajuste para centralizar a linha */
+}
+
+/* Efeito da linha ao passar o mouse */
+#about-area .brand-title:hover::after {
+  width: 100%;
+  /* A linha se expande para 100% da largura */
+}
+
+/* Estilização para o título do menu das redes sociais */
+#about-area .social-media-title {
+  text-align: center;
+  /* Centraliza o título */
+  font-size: 3rem;
+  /* Tamanho do texto */
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+  color: var(--light-gray-color);
+  /* Cor principal do título */
+  margin-top: 70px;
+  margin-bottom: 15px;
+  /* Espaçamento inferior */
+  position: relative;
+  /* Para ajustar o ícone */
+}
+
+/* Adiciona uma linha abaixo do título */
+#about-area .social-media-title::after {
+  content: '';
+  /* Cria o conteúdo da linha */
+  position: absolute;
+  /* Posiciona a linha abaixo do título */
+  bottom: -10px;
+  /* Distância da linha para o título */
+  left: 50%;
+  /* Centraliza a linha */
+  width: 0%;
+  /* Inicialmente, a linha tem largura 0 */
+  height: 3px;
+  /* Altura da linha */
+  background-color: var(--red-color);
+  /* Cor da linha */
+  transition: width 0.5s ease-in-out;
+  /* Transição suave */
+  transform: translateX(-50%);
+  /* Ajuste para centralizar a linha */
+}
+
+/* Efeito da linha ao passar o mouse */
+#about-area .social-media-title:hover::after {
+  width: 100%;
+  /* A linha se expande para 100% da largura */
+}
+
+#about-area .logo-text {
+  color: var(--light-gray-color);
+}
+
+/* Estilização para o ícone */
+#about-area .logo-text i {
+  font-size: 1.5rem;
+  /* Tamanho do ícone */
+  color: var(--red-color);
+  /* Cor do ícone */
+  transition: transform 0.3s ease;
+  /* Suaviza a animação */
+}
+
+#about-area h3.about-title {
+  margin-bottom: 12px;
+}
+
+/* Estilização de links */
+#about-area a {
+  color: var(--red-color);
+  transition: all 0.3s ease;
+}
+
+#about-area a:hover {
+  color: var(--dark-red-color);
+  transition: all 0.3s ease;
+}
+
+/* Espaçamento inferior seções de sobre */
+#about-area .mg-bottom {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+#about-area .mg-top {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+/* Estilos gerais já existentes */
+
+/* Responsividade para telas pequenas (até 768px) */
+@media (max-width: 768px) {
+  #about-area .row.first-row {
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  #about-area .brand-title,
+  #about-area .social-media-title {
+    font-size: 2rem; /* Reduz o tamanho do título */
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  #about-area .brand-title::after,
+  #about-area .social-media-title::after {
+    height: 2px; /* Reduz a espessura da linha */
+  }
+
+  #about-area .service-description {
+    font-size: 16px; /* Texto menor para leitura em telas pequenas */
+  }
+
+  #about-area a {
+    font-size: 14px; /* Ajusta o tamanho dos links */
+  }
+}
+
+/* Responsividade para telas muito pequenas (até 576px) */
+@media (max-width: 576px) {
+  #about-area .brand-title,
+  #about-area .social-media-title {
+    font-size: 1.8rem; /* Ajusta ainda mais o tamanho dos títulos */
+  }
+
+  #about-area .service-description {
+    font-size: 14px; /* Texto menor para telas muito pequenas */
+  }
+
+  #about-area a {
+    display: block; /* Links exibidos em bloco para facilitar o toque */
+    margin-bottom: 10px; /* Espaçamento entre os links */
+  }
+
+  #about-area .logo-text i {
+    font-size: 1.2rem; /* Reduz o tamanho dos ícones */
+  }
+}
+
+/* Responsividade para telas médias (entre 768px e 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  #about-area .row.first-row {
+    height: auto; /* Ajusta a altura para telas médias */
+  }
+
+  #about-area .brand-title,
+  #about-area .social-media-title {
+    font-size: 2.2rem; /* Títulos intermediários */
+  }
+
+  #about-area .service-description {
+    font-size: 17px; /* Texto levemente maior que em telas pequenas */
+  }
+}
+
+/* Responsividade para telas grandes (entre 992px e 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  #about-area .brand-title,
+  #about-area .social-media-title {
+    font-size: 2.4rem; /* Ajuste para telas grandes */
+  }
+
+  #about-area .service-description {
+    font-size: 18px; /* Tamanho padrão */
+  }
+
+  #about-area .logo-text i {
+    font-size: 1.3rem; /* Ajuste intermediário para ícones */
+  }
+}
+
+/* Responsividade para telas muito grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+  #about-area .row.first-row {
+    height: 650px; /* Mantém o estilo original */
+  }
+
+  #about-area .brand-title,
+  #about-area .social-media-title {
+    font-size: 3rem; /* Tamanho padrão para telas grandes */
+  }
+
+  #about-area .service-description {
+    font-size: 18px; /* Tamanho padrão */
+  }
+}
