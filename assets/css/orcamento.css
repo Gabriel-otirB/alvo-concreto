@@ -1,0 +1,295 @@
+/* Seção de serviços */
+#orcamento-area {
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+/* Espaçamento inferior seções de serviços */
+#orcamento-area .mg-bottom {
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+#orcamento-area .mg-top {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+/* Estilização para o título da marca */
+#orcamento-area .brand-title {
+  text-align: center;
+  /* Centraliza o título */
+  font-size: 2.5rem;
+  /* Tamanho do texto */
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+  color: var(--red-color);
+  /* Cor principal do título */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* Espaçamento inferior */
+  position: relative;
+  /* Para ajustar o ícone */
+}
+
+/* Adiciona uma linha abaixo do título */
+#orcamento-area .brand-title::after {
+  content: '';
+  /* Cria o conteúdo da linha */
+  position: absolute;
+  /* Posiciona a linha abaixo do título */
+  bottom: -10px;
+  /* Distância da linha para o título */
+  left: 50%;
+  /* Centraliza a linha */
+  width: 0%;
+  /* Inicialmente, a linha tem largura 0 */
+  height: 3px;
+  /* Altura da linha */
+  background-color: var(--red-color);
+  /* Cor da linha */
+  transition: width 0.5s ease-in-out;
+  /* Transição suave */
+  transform: translateX(-50%);
+  /* Ajuste para centralizar a linha */
+}
+
+/* Efeito da linha ao passar o mouse */
+#orcamento-area .brand-title:hover::after {
+  width: 100%;
+  /* A linha se expande para 100% da largura */
+}
+
+#orcamento-area .logo-text {
+  color: var(--light-gray-color);
+}
+
+#orcamento-area .main-title {
+  margin-bottom: 50px;
+}
+
+/* Estilização de links */
+#orcamento-area a {
+  color: var(--red-color);
+  transition: all 0.3s ease;
+}
+
+#orcamento-area a:hover {
+  color: var(--dark-red-color);
+  transition: all 0.3s ease;
+}
+
+/* Container dos ícones - Adicionando fundo branco e divisões */
+.icon-wrapper {
+  border: 4px solid var(--red-color);
+  background-color: var(--light-gray-color);  /* Cor de fundo branca */
+  padding: 5px 15px 5px 15px;  /* Espaçamento interno */
+  border-radius: 15px;  /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombras sutis */
+}
+
+/* Ajuste para os ícones */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-row {
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid var(--dark-red-color); /* Linha de divisão */
+}
+
+.icon-row:last-child {
+  border-bottom: none; /* Remove a linha da última linha de ícones */
+}
+
+.icon-item {
+  overflow: visible;
+  border-right: 2px solid var(--dark-red-color);
+  text-align: center;
+  cursor: pointer;
+  flex: 1; /* Equaliza o tamanho dos ícones */
+}
+
+.icon-item:last-child {
+  border-right: none; /* Remove a linha da última coluna de ícones */
+}
+
+.icon-item i {
+  font-size: 50px;
+  color: var(--red-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-item i.piso {
+  rotate: 10deg;
+}
+
+.icon-item small {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-item small {
+  margin-top: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--dark-gray-color);
+}
+
+.icon-item:hover i,
+.icon-item:hover small {
+  color: var(--dark-red-color);
+}
+
+#concreteForm label {
+  color: var(--light-gray-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Estilo personalizado para inputs */
+.input-custom {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid var(--light-gray-color);
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: var(--light-gray-color);
+  color: var(--dark-gray-color);
+  transition: all 0.3s ease-in-out;
+  border: 3px solid var(--dark-red-color);
+}
+
+.input-custom:focus {
+  outline: none;
+  border-color: var(--red-color);
+  box-shadow: 0 0 5px var(--red-color);
+}
+
+/* Botão personalizado */
+#orcamento-area .btn-custom {
+  margin: 15px 15%;
+  background-color: var(--red-color);
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  width: 50%;
+}
+
+#orcamento-area .btn-custom:hover {
+  background-color: var(--dark-red-color);
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.025);
+}
+
+#orcamento-area .btn-custom:active {
+  background-color: var(--dark-red-color);  
+  color: white;                              
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transform: scale(1.00);
+}
+
+/* Responsividade para telas pequenas (até 768px) */
+@media (max-width: 768px) {
+  #orcamento-area .row.first-row {
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  #orcamento-area .brand-title,
+  #orcamento-area .social-media-title {
+    font-size: 2rem; /* Reduz o tamanho do título */
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  #orcamento-area .brand-title::after,
+  #orcamento-area .social-media-title::after {
+    height: 2px; /* Reduz a espessura da linha */
+  }
+
+  #orcamento-area .service-description {
+    font-size: 16px; /* Texto menor para leitura em telas pequenas */
+  }
+
+  #orcamento-area a {
+    font-size: 14px; /* Ajusta o tamanho dos links */
+  }
+}
+
+/* Responsividade para telas muito pequenas (até 576px) */
+@media (max-width: 576px) {
+  #orcamento-area .brand-title,
+  #orcamento-area .social-media-title {
+    font-size: 1.8rem; /* Ajusta ainda mais o tamanho dos títulos */
+  }
+
+  #orcamento-area .service-description {
+    font-size: 14px; /* Texto menor para telas muito pequenas */
+  }
+
+  #orcamento-area a {
+    display: block; /* Links exibidos em bloco para facilitar o toque */
+    margin-bottom: 10px; /* Espaçamento entre os links */
+  }
+
+  #orcamento-area .logo-text i {
+    font-size: 1.2rem; /* Reduz o tamanho dos ícones */
+  }
+}
+
+/* Responsividade para telas médias (entre 768px e 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  #orcamento-area .row.first-row {
+    height: auto; /* Ajusta a altura para telas médias */
+  }
+
+  #orcamento-area .brand-title,
+  #orcamento-area .social-media-title {
+    font-size: 2.2rem; /* Títulos intermediários */
+  }
+
+  #orcamento-area .service-description {
+    font-size: 17px; /* Texto levemente maior que em telas pequenas */
+  }
+}
+
+/* Responsividade para telas grandes (entre 992px e 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  #orcamento-area .brand-title,
+  #orcamento-area .social-media-title {
+    font-size: 2.4rem; /* Ajuste para telas grandes */
+  }
+
+  #orcamento-area .service-description {
+    font-size: 18px; /* Tamanho padrão */
+  }
+
+  #orcamento-area .logo-text i {
+    font-size: 1.3rem; /* Ajuste intermediário para ícones */
+  }
+}
+
+/* Responsividade para telas muito grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+  #orcamento-area .row.first-row {
+    height: 650px; /* Mantém o estilo original */
+  }
+
+  #orcamento-area .brand-title,
+  #orcamento-area .social-media-title {
+    font-size: 3rem; /* Tamanho padrão para telas grandes */
+  }
+
+  #orcamento-area .service-description {
+    font-size: 18px; /* Tamanho padrão */
+  }
+}

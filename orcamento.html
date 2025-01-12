@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="./assets/css/navbar.css">
   <link rel="stylesheet" href="./assets/css/footer.css">
-  <link rel="stylesheet" href="./assets/css/contact.css">
+  <link rel="stylesheet" href="./assets/css/orcamento.css">
   <title>Alvo Concreto</title>
 </head>
 
@@ -47,80 +47,72 @@
     </div>
   </header>
 
-  <!-- CONTACT -->
-  <section id="contact-area" class="bg-default">
-    <div class="div-line"></div>
-    <div class="container bg-default">
-      <div class="col-12">
-        <h3 class="brand-title">
-          <span class="logo-text">Alvo<i class="fa-solid fa-location-crosshairs"></i>Concreto</span>
-        </h3>
-      </div>
+  <!-- ORÇAMENTO -->
+  <section id="orcamento-area" class="bg-default">
+    <div class="container">
       <div class="row">
+        <!-- Título do projeto -->
         <div class="col-12">
-          <h3 class="main-title">
+          <h3 class="brand-title">
             <span class="logo-text">Alvo<i class="fa-solid fa-location-crosshairs"></i>Concreto</span>
           </h3>
         </div>
-        <!-- Informações de Contato -->
-        <div class="col-md-6 contact-info">
-          <h3 class="about-title">ENTRE EM CONTATO COM A NOSSA EQUIPE</h3>
-          <p>Estamos prontos para atender você! Estamos localizados na Rua da Construção, 123, Centro,
-            Rio
-            de Janeiro, RJ.</p>
-          <p>Estrategicamente bem posicionados para continuar oferecendo soluções de alta qualidade
-            para
-            suas obras com rapidez e eficiência.</p>
-          <p>Entre em contato conosco para saber mais sobre nossos produtos e serviços:</p>
-          <ul>
-            <li>
-              <a href="tel:+5521012345678" target="_blank">
-                <i class="fas fa-phone-alt"></i>
-                <strong>Telefone:</strong> (21) 01234-5678
-              </a>
-            </li>
-            <li>
-              <a href="mailto:contato@alvoconcreto.com.br">
-                <i class="fas fa-envelope"></i>
-                <strong>E-mail:</strong> contato@alvoconcreto.com.br
-              </a>
-            </li>
-            <li>
-              <a href="https://maps.app.goo.gl/6qxQfBtYhEqdrSuo6" target="_blank">
-                <i class="fas fa-map-marker-alt"></i>
-                <strong>Endereço:</strong> Rua da Construção, 123, Centro, Rio de Janeiro, RJ
-              </a>
-            </li>
-            <li>
-              <a href="https://wa.me/5521012345678?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Alvo%20Concreto!"
-                target="_blank">
-                <i class="fab fa-whatsapp"></i>
-                <strong>WhatsApp:</strong> (21) 01234-5678
-              </a>
-            </li>
-          </ul>
-          <h4>Nossos Horários de Atendimento</h4>
-          <ul>
-            <li>
-              <i class="fas fa-clock"></i>
-              Segunda a Sexta: 8h às 18h
-            </li>
-            <li>
-              <i class="fas fa-clock"></i>
-              Sábado: 8h às 12h
-            </li>
-          </ul>
+
+        <!-- Subtítulo da calculadora -->
+        <div class="col-md-12">
+          <h3 class="main-title">Calculadora de Concreto</h3>
         </div>
-        <!-- Imagem -->
+
+        <!-- Coluna para as seleções de concretagem -->
         <div class="col-md-6">
-          <img class="img-fluid" src="./assets/img/contact-people.jpg" alt="Concreteira Alvo Concreto">
-          <!-- Mapa do Google com altura responsiva -->
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29401.512679527343!2d-43.202110723713645!3d-22.906395572314413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRua%20da%20Constru%C3%A7%C3%A3o%2C%20123%2C%20Centro%2C%20Rio%20de%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1733069986554!5m2!1spt-BR!2sbr"
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="icon-wrapper">
+            <div class="icon-container">
+              <div class="icon-row">
+                <div class="icon-item" onclick="selectOption('Laje')">
+                  <i class="fas fa-kaaba laje" title="Laje"></i>
+                  <small>Laje</small>
+                </div>
+                <div class="icon-item" onclick="selectOption('Piso')">
+                  <i class="fa-regular fa-square piso" title="Piso"></i>
+                  <small>Piso</small>
+                </div>
+              </div>
+              <div class="icon-row">
+                <div class="icon-item" onclick="selectOption('Viga')">
+                  <i class="fas fa-archway viga" title="Viga"></i>
+                  <small>Viga</small>
+                </div>
+                <div class="icon-item" title="Calçada" onclick="selectOption('Muro')">
+                  <i class="fas fa-square muro"></i>
+                  <small>Muro</small>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <!-- Coluna para o formulário de cálculo -->
+        <div class="col-md-6">
+          <form id="concreteForm">
+            <div class="mb-2">
+              <label for="espessura" class="form-label">Espessura (m):</label>
+              <input type="number" id="espessura" class="form-control input-custom" step="0.1" required>
+            </div>
+            <div class="mb-2">
+              <label for="largura" class="form-label">Largura (m):</label>
+              <input type="number" id="largura" class="form-control input-custom" step="0.1" required>
+            </div>
+            <div class="mb-2">
+              <label for="comprimento" class="form-label">Comprimento (m):</label>
+              <input type="number" id="comprimento" class="form-control input-custom" step="0.1" required>
+            </div>
+            <div class="mb-3">
+              <button type="button" class="btn btn-custom">Calcular</button>
+            </div>
+          </form>
+
+          <!-- Resultado do cálculo -->
+          <div class="result-container"></div>
         </div>
       </div>
     </div>
@@ -176,6 +168,13 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Função para selecionar o tipo de concreto
+    function selectOption(option) {
+      alert("Você selecionou: " + option);
+    }
+  </script>
 
 </body>
 

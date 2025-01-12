@@ -32,10 +32,14 @@
     color: var(--dark-gray-color);
 }
 
-.footer-contact i,
 .footer-socials i {
     color: var(--red-color);
     margin-right: 10px;
+}
+
+.footer-contact i {
+    color: var(--red-color);
+    margin-right: 5px;
 }
 
 .footer-socials i {
@@ -61,6 +65,17 @@
 }
 
 .footer-socials a:hover {
+    color: var(--red-color);
+}
+
+.footer-contact a {
+    color: var(--dark-gray-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.5s ease;
+}
+
+.footer-contact a:hover {
     color: var(--red-color);
 }
 

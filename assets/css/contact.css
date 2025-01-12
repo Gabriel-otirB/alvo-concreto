@@ -77,11 +77,14 @@
   width: 100%; /* Linha cresce para 100% da largura do texto */
 }
 
+#contact-area ul li, #contact-area ul li a {
+  transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
+}
+
 /* Efeito de hover nas li da seção de contato */
 #contact-area ul li:hover {
   color: var(--red-color); /* Mudança de cor no texto ao passar o mouse */
   transform: translateX(5px); /* Pequeno movimento para a direita */
-  transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
 }
 
 #contact-area ul li a:hover {
@@ -100,33 +103,6 @@
   margin-right: 0.5rem; /* Espaço entre o ícone e o texto */
   font-size: 1.2rem; /* Tamanho do ícone */
   color: var(--red-color); /* Cor do ícone */
-}
-
-#contact-area .btn-container {
-  text-align: center; /* Centraliza o botão dentro do contêiner */
-}
-
-#contact-area .btn-contact {
-  display: inline-block;
-  margin-top: 1rem;
-  margin-bottom: 3.5rem;
-  padding: 0.8rem 2rem;
-  font-size: 1.3rem;
-  color: #fff;
-  background-color: var(--red-color);
-  border-radius: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-#contact-area .btn-contact:hover {
-  background-color: var(--red-color);
-  transform: scale(1.05);
-}
-
-#contact-area div.contact-info {
-  margin-bottom: 70px;
 }
 
 /* Ajustes de responsividade */

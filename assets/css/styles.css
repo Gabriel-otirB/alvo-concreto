@@ -308,6 +308,7 @@ ul#about-list li span {
 }
 
 /* CONTACT */
+/* CONTACT */
 #contact-area h3 {
   margin-top: 1rem;
   margin-bottom: 2.5rem;
@@ -317,9 +318,25 @@ ul#about-list li span {
   margin: 0 0.1rem ;
 }
 
+/* Imagem */
 #contact-area img {
-  border-radius: 1rem; /* Arredondar a borda da imagem */
+  border-radius: 1rem;
   border: 0.2rem solid var(--red-color);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+  will-change: transform;
+  backface-visibility: hidden;
+  image-rendering: smooth; /* Tenta renderizar a imagem de forma mais suave */
+}
+
+#contact-area img:hover {
+  transform: scale(1.02) rotate(-0.5deg); /* Aumenta e rotaciona a imagem suavemente */
+}
+
+#contact-area ul li a {
+  font-size: 18px;
+  color: var(--light-gray-color);
+  text-decoration: none;
 }
 
 /* Efeito de hover no título "Horários de Atendimento" */
@@ -342,18 +359,24 @@ ul#about-list li span {
   background-color: var(--light-gray-color);
   bottom: -5px; /* Posiciona a linha abaixo do texto */
   left: 0;
-  transition: width 0.3s ease;
+  transition: width 0.6s ease;
 }
 
 #contact-area h4:hover::after {
   width: 100%; /* Linha cresce para 100% da largura do texto */
 }
 
-/* Efeito de hover nas li da seção de contato */
+#contact-area ul li, #contact-area ul li a {
+  transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
+}
+
 #contact-area ul li:hover {
   color: var(--red-color); /* Mudança de cor no texto ao passar o mouse */
   transform: translateX(5px); /* Pequeno movimento para a direita */
-  transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
+}
+
+#contact-area ul li a:hover {
+  color: var(--red-color); /* Mudança de cor no texto ao passar o mouse */
 }
 
 #contact-area ul {
@@ -391,6 +414,10 @@ ul#about-list li span {
 #contact-area .btn-contact:hover {
   background-color: var(--red-color);
   transform: scale(1.05);
+}
+
+#contact-area div.contact-info {
+  margin-bottom: 70px;
 }
 
 /* Ajuste de responsividade para a seção de contato */
