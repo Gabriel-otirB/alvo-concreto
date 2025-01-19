@@ -115,7 +115,7 @@
 
 /* Estilização para o ícone */
 #about-area .logo-text i {
-  font-size: 1.5rem;
+  font-size: 30px;
   /* Tamanho do ícone */
   color: var(--red-color);
   /* Cor do ícone */

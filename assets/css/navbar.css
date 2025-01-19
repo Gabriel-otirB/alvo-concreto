@@ -3,9 +3,20 @@
   background-color: var(--light-gray-color); /* Cor de fundo cinza claro */
 }
 
+.navbar-nav {
+  margin-right: 40px;
+}
+
+.navbar-brand i.logo-icon {
+  margin-left: 30px; 
+  margin-right: 5px; /* Aumenta o espaço à direita do ícone */
+  font-size: 2rem; /* Aumenta o tamanho do ícone */
+  --fa-animation-duration: 60s; /* Para animação */
+}
+
 .nav-link-custom {
   font-size: 1.25rem; /* Aumenta o tamanho da fonte dos links */
-  font-weight: 500;
+  font-weight: 530;
   margin-right: 20px; /* Aumenta o espaço entre os links */
   position: relative;
   color: var(--black-color); /* Cor padrão */
@@ -37,12 +48,6 @@
 /* Logo */
 .logo {
   margin-left: 30px; /* Aumenta o espaço à esquerda */
-}
-
-.logo-icon {
-  margin-right: 15px; /* Aumenta o espaço à direita do ícone */
-  font-size: 2rem; /* Aumenta o tamanho do ícone */
-  --fa-animation-duration: 60s; /* Para animação */
 }
 
 nav .logo-text {
