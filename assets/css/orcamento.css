@@ -145,10 +145,39 @@
   color: var(--dark-red-color);
 }
 
+#orcamento-area input{
+  font-weight: bold;
+  color: var(--dark-gray-color);
+  font-size: 18px;
+}
+
 #concreteForm label {
   color: var(--light-gray-color);
   font-size: 20px;
   font-weight: bold;
+}
+
+#concreteForm .input-custom {
+  text-align: center;
+}
+
+.outroInput {
+  margin-top: 20px;
+}
+
+.outroInput label {
+  color: var(--light-gray-color);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.outroInput .input-custom {
+  width: 100%;
+}
+
+.outroInput input::placeholder {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* Estilo personalizado para inputs */
