@@ -105,16 +105,40 @@
   color: var(--red-color); /* Cor do ícone */
 }
 
-/* Ajustes de responsividade */
 @media (max-width: 768px) {
-  #contact-area .map-container {
-    height: 250px; /* Altura do mapa em telas menores */
+
+  #contact-area div.contact-info h3 {
+    font-size: 2.75rem;
   }
-}
 
+  #contact-area h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-/* Ajuste de responsividade para a seção de contato */
-@media (max-width: 768px) {
+  #contact-area ul.contact-details {
+    margin-top: -15px;
+  }
+
+  #contact-area div.map-container {
+    margin-top: -70px;
+    margin-bottom: 35px;
+  }
+
+  img.img-fluid {
+    display: none;
+  }
+
+  #contact-area h4 {
+    margin-right: 8px;
+    margin-top: 10px;
+  }
+
+  #contact-area h3 {
+    font-size: 2.5;
+    margin-top: 0px;
+  }
+
   #contact-area ul li {
     font-size: 1rem; /* Diminui o tamanho do texto nas li para telas pequenas */
   }
@@ -122,10 +146,7 @@
   #contact-area .btn-contact {
     font-size: 1rem; /* Diminui o tamanho do botão para telas pequenas */
   }
-}
 
-/* Ajustes de responsividade */
-@media (max-width: 768px) {
   #contact-area .map-container {
     height: 250px; /* Altura do mapa em telas menores */
   }

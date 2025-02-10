@@ -46,6 +46,10 @@
   text-shadow: 0 4px 6px rgba(0, 0, 0, 1);
 }
 
+.carousel-caption h5.mobile-title {
+  display: none;
+}
+
 .carousel-caption p {
   color: var(--light-gray-color);
   font-size: 1.8rem;
@@ -70,9 +74,7 @@
   text-align: center;
   line-height: 2rem;
   transition: transform 0.3s ease-in-out, background-color 0.5s ease, border-color 0.5s ease;
-  position: relative;
   pointer-events: all;
-  z-index: 20;
 }
 
 .main-btn:hover {
@@ -120,7 +122,6 @@
     top: 45%; /* Ajusta a posição vertical do texto em telas menores */
     max-width: 80%;
     padding: 0.5rem;
-    z-index: 20;
   }
 
   .carousel-caption h5 {
@@ -128,7 +129,7 @@
   }
 
   .carousel-caption p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .main-btn {
@@ -136,7 +137,6 @@
     height: 3rem;
     font-size: 1.1rem;
     line-height: 1.5rem;
-    z-index: 20;
   }
 
   .carousel-indicators button {
@@ -147,7 +147,7 @@
 
 @media (max-width: 768px) {
   .carousel-caption {
-    top: 50%; /* Reajusta a posição do texto para garantir visibilidade */
+    top: 50%; /* Ajusta a posição vertical do texto em telas menores */
     max-width: 80%;
     padding: 0.5rem;
     z-index: 20;
@@ -158,74 +158,89 @@
   }
 
   .carousel-caption p {
+    font-size: 1.4rem;
+  }
+
+  .main-btn {
+    width: 14rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .carousel-indicators button {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+
+@media (max-width: 710px) {
+  .carousel-caption {
+    top: 50%; /* Ajusta a posição vertical do texto em telas menores */
+    max-width: 80%;
+    padding: 0.5rem;
+    z-index: 20;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.9rem;
+  }
+
+  .carousel-caption p {
     font-size: 1.1rem;
   }
 
   .main-btn {
-    width: 13rem;
-    height: 2.8rem;
-    font-size: 1rem;
-    line-height: 1.4rem;
+    width: 11rem;
+    height: 3.5rem;
+    font-size: 1.1rem;
+    line-height: 1rem;
   }
 
   .carousel-indicators button {
-    width: 0.7rem;
-    height: 0.7rem;
+    width: 0.75rem;
+    height: 0.75rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 582px) {
   .carousel-caption {
-    top: 50%; /* Ajusta a posição em telas menores */
+    top: 50%; /* Ajusta a posição vertical do texto em telas menores */
     max-width: 80%;
     padding: 0.5rem;
+    z-index: 20;
   }
 
   .carousel-caption h5 {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption h5.default-title {
+    display: none;
+  }
+  .carousel-caption h5.mobile-title {
+    display: flex;
   }
 
   .carousel-caption p {
+    font-size: 1.4rem;
+    display: none;
+  }
+
+  .main-btn {
+    width: 7.7rem;
+    height: 3.8rem;
     font-size: 1rem;
-  }
-
-  .main-btn {
-    width: 12rem;
-    height: 2.5rem;
-    font-size: 0.9rem;
-    line-height: 1.2rem;
-  }
-
-  .carousel-indicators button {
-    width: 0.6rem;
-    height: 0.6rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .carousel-caption {
-    top: 55%; /* Ajusta a posição em telas pequenas */
-    max-width: 80%;
-    padding: 0.5rem;
-  }
-
-  .carousel-caption h5 {
-    font-size: 1.5rem;
-  }
-
-  .carousel-caption p {
-    font-size: 0.9rem;
-  }
-
-  .main-btn {
-    width: 10rem;
-    height: 2.2rem;
-    font-size: 0.8rem;
-    line-height: 1.1rem;
+    padding-left: 5px;
+    line-height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
   .carousel-indicators button {
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
   }
 }
+

@@ -1,11 +1,16 @@
+p,
+li {
+    color: var(--light-gray-color);
+    font-size: 20px;
+    /* Aumentando o tamanho do texto do conteúdo */
+    font-weight: bold;
+    /* Deixando o texto em negrito */
+}
+
 /* Seção de serviços */
 #services-area {
     margin-top: 80px;
     font-size: 18px;
-}
-
-#services-area .row.first-row {
-    height: 650px;
 }
 
 /* Espaçamento inferior seções de serviços */
@@ -92,9 +97,7 @@
 
 /* Descrição dos serviços */
 #services-area .service-description {
-    font-size: 1.125rem;
-    /* Equivalente a 18px */
-    line-height: 1.5;
+    font-size: 18px;
     margin-bottom: 30px;
     margin-top: 20px;
     color: var(--light-gray-color);
@@ -186,6 +189,7 @@
     border-radius: 20px;
     border: solid 0.2rem var(--red-color);
     transform: translateZ(0);
+    min-height: 300px;
     /* Necessário para otimizar o movimento */
 }
 
@@ -283,18 +287,79 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
+#services-area .bg-default {
+    width: auto;
+}
 
-
-/* Responsividade para telas menores */
 @media (max-width: 768px) {
-    #services-area {
-        padding-top: 140px;
-        /* Espaçamento maior para telas pequenas */
+
+    #call-area {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #services-area .btn-services {
+        margin-bottom: 15px;
+    }
+
+    #services-area .img-end {
+        margin-bottom: 20px;
+    }
+
+    #services-area .img-start {
+        margin-top: 10px;
+    }
+
+    #services-area .container {
+        margin: 0 0;
+    }
+
+    #services-area h3.brand-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #services-area .service-description {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #services-area .service-benefits li i,
+    #services-area .service-benefits-2 li i {
+        margin-top: 5px;
+        margin-right: 8px;
+    }
+
+    #services-area .service-benefits,
+    #services-area .service-benefits-2 {
+        margin-top: -15px;
+    }
+
+    .about-title {
+        margin-bottom: -10px;
+    }
+
+    .title-secondary {
+        margin-top: 15px;
+    }
+
+    #services-area .mg-bottom {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    #services-area .mg-top {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    #services-area .about-title {
+        text-align: center;
     }
 
     .service-description,
     .service-benefits {
         text-align: left;
-        /* Alinha texto à esquerda */
     }
+
 }

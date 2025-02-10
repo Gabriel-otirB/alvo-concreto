@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -15,30 +18,38 @@ li {
   list-style: none;
 }
 
-p, li {
+p,
+li {
   color: var(--light-gray-color);
-  font-size: 18px; /* Aumentando o tamanho do texto do conteúdo */
-  font-weight: bold; /* Deixando o texto em negrito */
+  font-size: 18px;
+  /* Aumentando o tamanho do texto do conteúdo */
+  font-weight: bold;
+  /* Deixando o texto em negrito */
 }
 
 .bg-default {
   background-color: var(--bg-default-1);
   background-image: url(../img/background.png);
-  background-size: cover; /* Certifica-se de cobrir toda a área */
-  background-position: center; /* Centraliza a imagem */
+  background-size: cover;
+  /* Certifica-se de cobrir toda a área */
+  background-position: center;
+  /* Centraliza a imagem */
 }
 
 .bg-secondary {
   background-color: var(--light-gray-color);
-  background-image: url(../img/background-2.png); /* Corrigindo para background-image */
-  background-size: cover; /* Certifica-se de cobrir toda a área */
-  background-position: center; /* Centraliza a imagem */
+  background-image: url(../img/background-2.png);
+  /* Corrigindo para background-image */
+  background-size: cover;
+  /* Certifica-se de cobrir toda a área */
+  background-position: center;
+  /* Centraliza a imagem */
 }
 
 .div-line {
-    background-color: var(--red-color);
-    height: 4px;
-    width: 100%;
+  background-color: var(--red-color);
+  height: 4px;
+  width: 100%;
 }
 
 .logo-text {
@@ -46,7 +57,7 @@ p, li {
   font-weight: bold;
 }
 
-.logo-text i{
+.logo-text i {
   color: var(--red-color);
 }
 
@@ -92,6 +103,10 @@ p, li {
   margin-bottom: 1.5rem;
   text-align: left;
   position: relative;
+}
+
+#about-area .about-title {
+  margin-bottom: 0.6rem;
 }
 
 .about-title::after {
@@ -149,15 +164,11 @@ ul#about-list {
 
 ul#about-list li {
   margin-left: 0;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   position: relative;
 }
 
 ul#about-list li i {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
   font-size: 1.5rem;
 }
 
@@ -181,17 +192,20 @@ ul#about-list li span {
 }
 
 #about-area .btn-saiba-mais:hover {
-  background-color: var(--red-color); /* Cor de fundo ao passar o mouse */
-  transform: scale(1.05); /* Aumento do botão ao passar o mouse */
+  background-color: var(--red-color);
+  /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05);
+  /* Aumento do botão ao passar o mouse */
 }
 
 #about-area .btn-saiba-mais:active {
-  transform: scale(1.02); /* Aumento do botão ao passar o mouse */
+  transform: scale(1.02);
+  /* Aumento do botão ao passar o mouse */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* SERVIÇOS */
-#services-area .main-title {
+#index-services-area .main-title {
   margin-top: 1rem;
   font-size: 4rem;
   color: var(--dark-gray-color);
@@ -199,7 +213,7 @@ ul#about-list li span {
   position: relative;
 }
 
-#services-area .main-title::after {
+#index-services-area .main-title::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -208,21 +222,25 @@ ul#about-list li span {
   height: 3px;
   background-color: var(--dark-gray-color);
   transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
-  transform: translateX(-50%); /* Centraliza a linha */
+  transform: translateX(-50%);
+  /* Centraliza a linha */
 }
 
-#services-area .main-title:hover::after {
-  width: 100%; /* A linha se expande para 100% */
-  left: 50%; /* Deixa a linha centralizada */
-  transform: translateX(-50%); /* Mantém a centralização durante o efeito de expansão */
+#index-services-area .main-title:hover::after {
+  width: 100%;
+  /* A linha se expande para 100% */
+  left: 50%;
+  /* Deixa a linha centralizada */
+  transform: translateX(-50%);
+  /* Mantém a centralização durante o efeito de expansão */
 }
 
 /* Atualizações nos Service Boxes */
-#services-area .row {
+#index-services-area .row {
   margin-top: 0;
 }
 
-#services-area .service-box {
+#index-services-area .service-box {
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
@@ -230,48 +248,56 @@ ul#about-list li span {
 .service-box {
   position: relative;
   text-align: center;
-  padding: 1.5rem; /* Reduzi o padding */
-  margin: 0.5rem auto; /* Menor margem para otimizar espaço */
+  padding: 1.5rem;
+  /* Reduzi o padding */
+  margin: 0.5rem auto;
+  /* Menor margem para otimizar espaço */
   background: #fff;
-  border-radius: 8px; /* Reduzi o arredondamento */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Suavizei a sombra */
+  border-radius: 8px;
+  /* Reduzi o arredondamento */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  /* Suavizei a sombra */
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 250px; /* Reduzi o tamanho máximo */
+  max-width: 250px;
+  /* Reduzi o tamanho máximo */
 }
 
 .service-box:hover {
-  transform: translateY(-8px) scale(1.02); /* Menor elevação e zoom */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ajustei o efeito de hover */
+  transform: translateY(-8px) scale(1.02);
+  /* Menor elevação e zoom */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  /* Ajustei o efeito de hover */
 }
 
 .service-box i {
-  font-size: 25px; /* Reduzi o tamanho do ícone */
-  margin-bottom: 1rem; /* Menor espaçamento inferior */
+  font-size: 25px;
+  /* Reduzi o tamanho do ícone */
+  margin-bottom: 1rem;
+  /* Menor espaçamento inferior */
   color: var(--dark-gray-color);
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .service-box:hover i {
-  color: var(--black-color); /* Cor ao passar o mouse */
-  transform: scale(1.1); /* Zoom menor no ícone */
+  color: var(--black-color);
+  /* Cor ao passar o mouse */
+  transform: scale(1.1);
+  /* Zoom menor no ícone */
 }
 
 .service-box h4 {
-  font-size: 1.8rem; /* Reduzi o tamanho do título */
-  margin-bottom: 0.8rem; /* Menor espaçamento inferior */
+  font-size: 1.8rem;
+  /* Reduzi o tamanho do título */
+  margin-bottom: 0.8rem;
+  /* Menor espaçamento inferior */
   color: var(--dark-gray-color);
   transition: color 0.3s ease;
 }
 
 .service-box:hover h4 {
-  color: var(--black-color); /* Cor ao passar o mouse */
-}
-
-.service-box p {
-  font-size: 1.2rem; /* Diminuí o texto */
-  color: var(--gray-color, #666);
-  line-height: 1.4; /* Menor espaçamento entre linhas */
+  color: var(--black-color);
+  /* Cor ao passar o mouse */
 }
 
 /* Gradiente de fundo nos boxes ao passar o mouse */
@@ -284,12 +310,22 @@ ul#about-list li span {
   height: 100%;
   background: linear-gradient(45deg, rgba(0, 123, 255, 0.1), rgba(0, 123, 255, 0.15));
   opacity: 0;
-  z-index: -1; /* Mantém o gradiente atrás do conteúdo */
+  z-index: -1;
+  /* Mantém o gradiente atrás do conteúdo */
   transition: opacity 0.3s ease;
 }
 
 .service-box:hover::before {
-  opacity: 1; /* Gradiente visível ao passar o mouse */
+  opacity: 1;
+  /* Gradiente visível ao passar o mouse */
+}
+
+.service-box p {
+  font-size: 1.2rem;
+  /* Diminuí o texto */
+  color: var(--gray-color, #666);
+  line-height: 1.4;
+  /* Menor espaçamento entre linhas */
 }
 
 /* Estilização do botão "Saiba Mais" na área de serviços */
@@ -313,14 +349,17 @@ ul#about-list li span {
 }
 
 /* CONTACT */
-/* CONTACT */
-#contact-area h3 {
+#contact-area h3.main-title {
   margin-top: 1rem;
   margin-bottom: 2.5rem;
 }
 
+#contact-area h3.about-title {
+  margin-bottom: 0.5rem;
+}
+
 #contact-area i {
-  margin: 0 0.1rem ;
+  margin: 0 0.1rem;
 }
 
 /* Imagem */
@@ -331,11 +370,13 @@ ul#about-list li span {
   transform-origin: center;
   will-change: transform;
   backface-visibility: hidden;
-  image-rendering: smooth; /* Tenta renderizar a imagem de forma mais suave */
+  image-rendering: smooth;
+  /* Tenta renderizar a imagem de forma mais suave */
 }
 
 #contact-area img:hover {
-  transform: scale(1.02) rotate(-0.5deg); /* Aumenta e rotaciona a imagem suavemente */
+  transform: scale(1.02) rotate(-0.5deg);
+  /* Aumenta e rotaciona a imagem suavemente */
 }
 
 #contact-area ul li a {
@@ -344,7 +385,10 @@ ul#about-list li span {
   text-decoration: none;
 }
 
-/* Efeito de hover no título "Horários de Atendimento" */
+#contact-area ul.contact-hours li {
+  font-size: 18px;
+}
+
 #contact-area h4 {
   position: relative;
   display: inline-block;
@@ -362,44 +406,50 @@ ul#about-list li span {
   width: 0%;
   height: 3px;
   background-color: var(--light-gray-color);
-  bottom: -5px; /* Posiciona a linha abaixo do texto */
+  bottom: -5px;
   left: 0;
   transition: width 0.6s ease;
 }
 
 #contact-area h4:hover::after {
-  width: 100%; /* Linha cresce para 100% da largura do texto */
+  width: 100%;
 }
 
-#contact-area ul li, #contact-area ul li a {
-  transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
+#contact-area ul li,
+#contact-area ul li a {
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transição suave para o efeito */
 }
 
 #contact-area ul li:hover {
-  color: var(--red-color); /* Mudança de cor no texto ao passar o mouse */
-  transform: translateX(5px); /* Pequeno movimento para a direita */
+  color: var(--red-color);
+  /* Mudança de cor no texto ao passar o mouse */
+  transform: translateX(5px);
+  /* Pequeno movimento para a direita */
 }
 
 #contact-area ul li a:hover {
-  color: var(--red-color); /* Mudança de cor no texto ao passar o mouse */
+  color: var(--red-color);
+  /* Mudança de cor no texto ao passar o mouse */
 }
 
 #contact-area ul {
   display: flex;
-  flex-direction: column; /* Garantindo que as li fiquem em uma coluna */
-  align-items: flex-start; /* Alinhando as li à esquerda */
+  flex-direction: column;
+  align-items: flex-start;
   padding-left: 0;
   margin-left: 0;
 }
 
 #contact-area ul li i {
-  margin-right: 0.5rem; /* Espaço entre o ícone e o texto */
-  font-size: 1.2rem; /* Tamanho do ícone */
-  color: var(--red-color); /* Cor do ícone */
+  margin-right: 0rem;
+  font-size: 1.2rem;
+  color: var(--red-color);
 }
 
 #contact-area .btn-container {
-  text-align: center; /* Centraliza o botão dentro do contêiner */
+  text-align: center;
+  /* Centraliza o botão dentro do contêiner */
 }
 
 #contact-area .btn-contact {
@@ -431,31 +481,115 @@ ul#about-list li span {
   margin-bottom: 70px;
 }
 
-/* Ajuste de responsividade para a seção de contato */
-@media (max-width: 768px) {
-  #contact-area ul li {
-    font-size: 1rem; /* Diminui o tamanho do texto nas li para telas pequenas */
-  }
-
-  #contact-area .btn-contact {
-    font-size: 1rem; /* Diminui o tamanho do botão para telas pequenas */
-  }
-}
-
 /* Animações */
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
+@media (max-width: 991px) {
+  #index-services-area .service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 230px;
+  }
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
+
+  #contact-area ul.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    justify-content: space-around;
+  }
+
+  #contact-area .contact-hours {
+    margin-top: -2.5px;
+  }
+
+  #contact-area img {
+    margin-top: 0.2rem;
+  }
+
+  #contact-area ul li i {
+    margin-right: 0rem;
+  }
+
+  #contact-area p {
+    text-align: center;
+  }
+
+  #contact-area p+p {
+    margin-top: -20px;
+    margin-bottom: 1.5rem;
+  }
+
+  #contact-area .btn-contact {
+    margin-top: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  #contact-area ul li {
+    font-size: 1rem;
+  }
+
+  #contact-area .btn-contact {
+    font-size: 1rem;
+  }
+
+  #contact-area .about-title {
+    margin-top: -1.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  #contact-area h4 {
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #contact-area h4::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--light-gray-color);
+    transition: width 0.6s ease-in-out, left 0.5s ease-in-out;
+    transform: translateX(-50%);
+  }
+
+  #contact-area h4:hover::after {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #contact-area p.rm-mobile {
+    display: none;
+  }
+
+  #contact-area .main-title {
+    margin-top: 2px;
+    margin-bottom: -10px;
+  }
+
   #about-area .row {
     flex-direction: column;
     text-align: center;
@@ -467,13 +601,64 @@ ul#about-list li span {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
 
-  .service-box {
-    max-width: 100%;
+  #about-area .main-title {
+    margin-bottom: 1.5rem;
+  }
+
+  #about-area .about-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #about-area p.rm-mobile {
+    display: none;
+  }
+
+  .about-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--light-gray-color);
+    transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    transform: translateX(-50%);
+  }
+
+  .about-title:hover::after {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #about-area .btn-saiba-mais {
+    margin-bottom: -150px;
+  }
+
+  ul#about-list li {
+    padding-left: 0rem;
+  }
+
+  #index-services-area .main-title {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #index-services-area .service-box {
+    width: 450px;
+    max-width: 92.5%;
     margin: 1rem auto;
   }
 
+  #index-services-area .row {
+    padding-bottom: 20px;
+  }
+
   .service-box i {
-    font-size: 30px; /* Aumentando o ícone para telas menores */
+    font-size: 30px;
+    /* Aumentando o ícone para telas menores */
   }
 
   .service-box h4 {
@@ -488,4 +673,3 @@ ul#about-list li span {
     font-size: 1rem;
   }
 }
-

@@ -31,8 +31,9 @@
                     <i class="fa-solid fa-helmet-safety fa-flip logo-icon"></i>
                     <span class="logo-text">Alvo<i class="fa-solid fa-location-crosshairs"></i>Concreto</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
@@ -48,7 +49,6 @@
         </div>
     </header>
 
-
     <!-- SLIDES -->
     <main>
         <section id="carousel" alt="carousel-section">
@@ -62,26 +62,29 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="8000">
+                    <div class="carousel-item active default-carousel" data-bs-interval="8000">
                         <img src="./assets/img/slide1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Transforme Sua Obra em Realidade</h5>
+                        <div class="carousel-caption">
+                            <h5 class="default-title">Transforme Sua Obra em Realidade</h5>
+                            <h5 class="mobile-title">Torne Suas Obras Reais</h5>
                             <p>Oferecemos soluções em concreto de alta qualidade para projetos robustos e seguros.</p>
                             <a href="orcamento.html" class="main-btn">Fazer Orçamento</a>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="8000">
+                    <div class="carousel-item default-carousel" data-bs-interval="8000">
                         <img src="./assets/img/slide2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Concreto de Alta Performance</h5>
+                        <div class="carousel-caption">
+                            <h5 class="default-title">Concreto de Alta Performance</h5>
+                            <h5 class="mobile-title">Crie Sua Base Sólida</h5>
                             <p>Garanta a durabilidade e resistência da sua obra com nossos produtos inovadores.</p>
                             <a href="orcamento.html" class="main-btn">Fazer Orçamento</a>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="8000">
+                    <div class="carousel-item default-carousel" data-bs-interval="8000">
                         <img src="./assets/img/slide3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Construa com Segurança e Qualidade</h5>
+                        <div class="carousel-caption">
+                            <h5 class="default-title">Construa com Segurança e Qualidade</h5>
+                            <h5 class="mobile-title">Faça Seu Mundo Sólido</h5>
                             <p>Com a Alvo Concreto, sua obra será entregue no prazo e com a máxima qualidade.</p>
                             <a href="orcamento.html" class="main-btn">Fazer Orçamento</a>
                         </div>
@@ -89,14 +92,6 @@
                 </div>
                 <div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </section>
 
@@ -118,7 +113,8 @@
                         <p>Na Alvo Concreto, transformamos o mercado da construção civil com soluções em concreto de
                             alta qualidade. Nosso objetivo é garantir a resistência e segurança das obras, usando as
                             melhores práticas e inovação tecnológica.</p>
-                        <p>Com uma sólida experiência, nossa missão é oferecer produtos e serviços que atendam às
+                        <p class="rm-mobile">Com uma sólida experiência, nossa missão é oferecer produtos e serviços que
+                            atendam às
                             exigências mais rigorosas, sempre com pontualidade e responsabilidade ambiental.</p>
                         <p>Confira os diferenciais que tornam a Alvo Concreto a escolha ideal para sua obra:</p>
                         <ul id="about-list">
@@ -140,80 +136,78 @@
         </section>
 
         <!-- SERVICES -->
-        <section class="bg-secondary" id="services-area">
+        <section class="bg-secondary" id="index-services-area">
             <div class="div-line"></div>
             <div class="container">
                 <div class="row">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3 class="main-title">Nossos Serviços</h3>
-                        </div>
-                        <div class="col-md-4 service-box">
-                            <i class="fas fa-truck"></i>
-                            <h4>Entrega de Concreto</h4>
-                            <p>Oferecemos serviços de entrega pontual de concreto em qualquer lugar da cidade,
-                                garantindo agilidade e eficiência.</p>
-                            <a href="services.html#service-entrega-concreto" class="btn-saiba-mais">Saiba Mais</a>
-                        </div>
-                        <div class="col-md-4 service-box">
-                            <i class="fas fa-hard-hat"></i>
-                            <h4>Consultoria Técnica</h4>
-                            <p>Nossa equipe especializada oferece suporte técnico para garantir a escolha do
-                                concreto ideal para o seu projeto.</p>
-                            <a href="services.html#service-consultoria-tecnica" class="btn-saiba-mais">Saiba Mais</a>
-                        </div>
-                        <div class="col-md-4 service-box">
-                            <i class="fas fa-tools"></i>
-                            <h4>Bombas de Concreto</h4>
-                            <p>Disponibilizamos equipamentos modernos para aplicação de concreto em áreas de difícil
-                                acesso com precisão e segurança.</p>
-                            <a href="services.html#service-bombas-concreto" class="btn-saiba-mais">Saiba Mais</a>
-                        </div>
-                        <div class="col-md-4 service-box">
-                            <i class="fas fa-calendar-check"></i>
-                            <h4>Planejamento de Obras</h4>
-                            <p>Ajudamos a planejar suas obras com precisão, otimizando recursos e reduzindo prazos
-                                de execução.</p>
-                            <a href="services.html#service-planejamento-obras" class="btn-saiba-mais">Saiba Mais</a>
-                        </div>
-                        <div class="col-md-4 service-box">
-                            <i class="fas fa-drafting-compass"></i>
-                            <h4>Projetos Personalizados</h4>
-                            <p>Desenvolvemos soluções de concreto sob medida, atendendo às especificações exclusivas
-                                de cada obra.</p>
-                            <a href="services.html#service-projetos-personalizados" class="btn-saiba-mais">Saiba
-                                Mais</a>
-                        </div>
-                        <div class="col-md-4 service-box">
-                            <i class="fas fa-shield-alt"></i>
-                            <h4>Garantia de Qualidade</h4>
-                            <p>Realizamos testes rigorosos para assegurar a resistência e durabilidade do concreto
-                                entregue.</p>
-                            <a href="services.html#service-garantia-qualidade" class="btn-saiba-mais">Saiba Mais</a>
-                        </div>
-                        <div class="col-md-4 service-box">
-                            <i class="fas fa-recycle"></i>
-                            <h4>Soluções Sustentáveis</h4>
-                            <p>Trabalhamos com materiais eco-friendly para minimizar os impactos ambientais em suas
-                                construções.</p>
-                            <a href="services.html#service-solucoes-sustentaveis" class="btn-saiba-mais">Saiba Mais</a>
-                        </div>
-                        <div class="col-md-4 service-box">
-                            <i class="fas fa-cogs"></i>
-                            <h4>Manutenção de Equipamentos</h4>
-                            <p>Realizamos a manutenção preventiva e corretiva de equipamentos para garantir sua
-                                performance e durabilidade.</p>
-                            <a href="services.html#service-manutencao-equipamentos" class="btn-saiba-mais">Saiba
-                                Mais</a>
-                        </div>
-                        <div class="col-md-4 service-box">
-                            <i class="fas fa-users-cog"></i>
-                            <h4>Treinamento e Capacitação</h4>
-                            <p>Oferecemos treinamentos para equipes de obra, garantindo o uso adequado e seguro dos
-                                materiais e equipamentos.</p>
-                            <a href="services.html#service-treinamento-capacitacao" class="btn-saiba-mais">Saiba
-                                Mais</a>
-                        </div>
+                    <div class="col-12">
+                        <h3 class="main-title">Nossos Serviços</h3>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-truck"></i>
+                        <h4>Entrega de Concreto</h4>
+                        <p>Oferecemos serviços de entrega pontual de concreto em qualquer lugar da cidade,
+                            garantindo agilidade e eficiência.</p>
+                        <a href="services.html#service-entrega-concreto" class="btn-saiba-mais">Saiba Mais</a>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-hard-hat"></i>
+                        <h4>Consultoria Técnica</h4>
+                        <p>Nossa equipe especializada oferece suporte técnico para garantir a escolha do
+                            concreto ideal para o seu projeto.</p>
+                        <a href="services.html#service-consultoria-tecnica" class="btn-saiba-mais">Saiba Mais</a>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-tools"></i>
+                        <h4>Bombas de Concreto</h4>
+                        <p>Disponibilizamos equipamentos modernos para aplicação de concreto em áreas de difícil
+                            acesso com precisão e segurança.</p>
+                        <a href="services.html#service-bombas-concreto" class="btn-saiba-mais">Saiba Mais</a>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-calendar-check"></i>
+                        <h4>Planejamento de Obras</h4>
+                        <p>Ajudamos a planejar suas obras com precisão, otimizando recursos e reduzindo prazos
+                            de execução.</p>
+                        <a href="services.html#service-planejamento-obras" class="btn-saiba-mais">Saiba Mais</a>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-drafting-compass"></i>
+                        <h4>Projetos Personalizados</h4>
+                        <p>Desenvolvemos soluções de concreto sob medida, atendendo às especificações exclusivas
+                            de cada obra.</p>
+                        <a href="services.html#service-projetos-personalizados" class="btn-saiba-mais">Saiba
+                            Mais</a>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Garantia de Qualidade</h4>
+                        <p>Realizamos testes rigorosos para assegurar a resistência e durabilidade do concreto
+                            entregue.</p>
+                        <a href="services.html#service-garantia-qualidade" class="btn-saiba-mais">Saiba Mais</a>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-recycle"></i>
+                        <h4>Soluções Sustentáveis</h4>
+                        <p>Trabalhamos com materiais eco-friendly para minimizar os impactos ambientais em suas
+                            construções.</p>
+                        <a href="services.html#service-solucoes-sustentaveis" class="btn-saiba-mais">Saiba Mais</a>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-cogs"></i>
+                        <h4>Manutenção de Equipamentos</h4>
+                        <p>Realizamos a manutenção preventiva e corretiva de equipamentos para garantir sua
+                            performance e durabilidade.</p>
+                        <a href="services.html#service-manutencao-equipamentos" class="btn-saiba-mais">Saiba
+                            Mais</a>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fas fa-users-cog"></i>
+                        <h4>Treinamento e Capacitação</h4>
+                        <p>Oferecemos treinamentos para equipes de obra, garantindo o uso adequado e seguro dos
+                            materiais e equipamentos.</p>
+                        <a href="services.html#service-treinamento-capacitacao" class="btn-saiba-mais">Saiba
+                            Mais</a>
                     </div>
                 </div>
             </div>
@@ -235,12 +229,13 @@
                         <p>Estamos prontos para atender você! Estamos localizados na Rua da Construção, 123, Centro,
                             Rio
                             de Janeiro, RJ.</p>
-                        <p>Estrategicamente bem posicionadas para continuar oferecendo soluções de alta qualidade
+                        <p class="rm-mobile">Estrategicamente bem posicionadas para continuar oferecendo soluções de
+                            alta qualidade
                             para
                             suas obras com rapidez e eficiência.</p>
                         <p>Entre em contato conosco para saber mais sobre nossos produtos e serviços:</p>
                         <ul>
-                            <li>
+                            <li class="contact-info">
                                 <a href="tel:+5521012345678" target="_blank">
                                     <i class="fas fa-phone-alt"></i>
                                     <strong>Telefone:</strong> (21) 01234-5678
@@ -267,14 +262,14 @@
                             </li>
                         </ul>
                         <h4>Horários de Atendimento</h4>
-                        <ul>
+                        <ul class="contact-hours">
                             <li>
                                 <i class="fas fa-clock"></i>
-                                Segunda a Sexta: 8h às 18h
+                                <strong>Segunda a Sexta:</strong> 8h às 18h
                             </li>
                             <li>
                                 <i class="fas fa-clock"></i>
-                                Sábado: 8h às 12h
+                                <strong>Sábado:</strong> 8h às 12h
                             </li>
                         </ul>
                     </div>
@@ -321,10 +316,14 @@
                         <div class="col-md-6 mb-3">
                             <h4>Siga-nos</h4>
                             <ul class="footer-socials">
-                                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" ></i> Instagram</a></li>
-                                <li><a href="https://br.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in" ></i> LinkedIn</a></li>
-                                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube" ></i> Youtube</a></li>
+                                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i>
+                                        Facebook</a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i
+                                            class="fab fa-instagram"></i> Instagram</a></li>
+                                <li><a href="https://br.linkedin.com/" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i>
+                                        Youtube</a></li>
                             </ul>
                         </div>
                     </div>
