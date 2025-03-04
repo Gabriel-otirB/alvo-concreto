@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const NavbarContainer = styled.header`
+export const Header = styled.header`
 
 .navbar {
   display: flex;
@@ -14,7 +14,7 @@ export const NavbarContainer = styled.header`
   justify-content: center;
   margin-left: 100px; 
   margin-right: 5px; 
-  font-size: 2rem; 
+  font-size: 30px; 
   --fa-animation-duration: 60s; 
 }
 
@@ -54,7 +54,6 @@ export const NavbarContainer = styled.header`
     }
   }
 }
-
 
 .logo {
   margin-left: 30px; 

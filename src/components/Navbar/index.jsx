@@ -1,8 +1,8 @@
-import { NavbarContainer } from './styles'
+import { Header } from './styles'
 
 const Navbar = () => {
   return (
-    <NavbarContainer>
+    <Header>
       <div className="container nav-container">
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <a className="navbar-brand d-flex align-items-center logo" href="#">
@@ -25,7 +25,7 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
-    </NavbarContainer>
+    </Header>
   )
 }
 
