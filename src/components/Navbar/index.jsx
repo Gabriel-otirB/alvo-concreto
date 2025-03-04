@@ -16,11 +16,11 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-item nav-link nav-link-custom" href="index.html">Início</a>
-              <a className="nav-item nav-link nav-link-custom" href="services.html">Serviços</a>
-              <a className="nav-item nav-link nav-link-custom" href="contact.html">Contato</a>
-              <a className="nav-item nav-link nav-link-custom" href="orcamento.html">Orçamento</a>
-              <a className="nav-item nav-link nav-link-custom" href="about.html">Sobre nós</a>
+              <a className="nav-item nav-link nav-link-custom" href="#">Início</a>
+              <a className="nav-item nav-link nav-link-custom" href="#">Serviços</a>
+              <a className="nav-item nav-link nav-link-custom" href="#">Contato</a>
+              <a className="nav-item nav-link nav-link-custom" href="#">Orçamento</a>
+              <a className="nav-item nav-link nav-link-custom" href="#"><span>Sobre nós</span></a>
             </div>
           </div>
         </nav>
