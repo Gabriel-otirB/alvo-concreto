@@ -33,6 +33,18 @@ export const Header = styled.header`
   line-height: 1.5;
   white-space: nowrap;
 
+  &.active {
+    color: var(--red-color);
+
+    &:hover {
+      color: var(--red-color);
+    }  
+
+    &::after {
+      background-color: var(--red-color); 
+    }
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -48,7 +60,7 @@ export const Header = styled.header`
   &:hover {
     color: var(--black-color); 
     transform: scale(1.1); 
-
+  
   &::after {
     width: 100%; 
     }

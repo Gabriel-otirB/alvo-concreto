@@ -1,4 +1,5 @@
 import { Header } from './styles'
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -16,11 +17,11 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-item nav-link nav-link-custom" href="#">Início</a>
-              <a className="nav-item nav-link nav-link-custom" href="#">Serviços</a>
-              <a className="nav-item nav-link nav-link-custom" href="#">Contato</a>
-              <a className="nav-item nav-link nav-link-custom" href="#">Orçamento</a>
-              <a className="nav-item nav-link nav-link-custom" href="#"><span>Sobre nós</span></a>
+              <NavLink className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"} to="/">Início</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"} to="/services">Serviços</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"} to="/contact">Contato</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"} to="/budget">Orçamento</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"} to="/about"><span>Sobre nós</span></NavLink>
             </div>
           </div>
         </nav>
