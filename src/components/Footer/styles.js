@@ -47,6 +47,7 @@ export const FooterArea = styled.footer`
     font-weight: bold;
     margin-bottom: 10px;
     color: var(--dark-gray-color);
+    }
 
     .dev a {
     color: var(--red-color);
@@ -59,7 +60,6 @@ export const FooterArea = styled.footer`
     color: var(--dark-gray-color);
     text-decoration: none;
     }
-}
 }
 
 .footer-contact li {
