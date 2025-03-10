@@ -21,27 +21,24 @@ const Carousel = () => {
             <img src={slide1} className="d-block w-100" alt="..."/>
               <div className="carousel-caption">
                 <h5 className="default-title">Transforme Sua Obra em Realidade</h5>
-                <h5 className="mobile-title">Torne Suas Obras Reais</h5>
                 <p>Oferecemos soluções em concreto de alta qualidade para projetos robustos e seguros.</p>
-                <a href="orcamento.html" className="main-btn">Fazer Orçamento</a>
+                <a href="#" className="main-btn">Fazer Orçamento</a>
               </div>
           </div>
           <div className="carousel-item default-carousel" data-bs-interval="8000">
             <img src={slide2} className="d-block w-100" alt="..."/>
               <div className="carousel-caption">
                 <h5 className="default-title">Concreto de Alta Performance</h5>
-                <h5 className="mobile-title">Crie Sua Base Sólida</h5>
                 <p>Garanta a durabilidade e resistência da sua obra com nossos produtos inovadores.</p>
-                <a href="orcamento.html" className="main-btn">Fazer Orçamento</a>
+                <a href="#" className="main-btn">Fazer Orçamento</a>
               </div>
           </div>
           <div className="carousel-item default-carousel" data-bs-interval="8000">
             <img src={slide3} className="d-block w-100" alt="..."/>
               <div className="carousel-caption">
                 <h5 className="default-title">Construa com Segurança e Qualidade</h5>
-                <h5 className="mobile-title">Faça Seu Mundo Sólido</h5>
                 <p>Com a Alvo Concreto, sua obra será entregue no prazo e com a máxima qualidade.</p>
-                <a href="orcamento.html" className="main-btn">Fazer Orçamento</a>
+                <a href="#" className="main-btn">Fazer Orçamento</a>
               </div>
           </div>
         </div>

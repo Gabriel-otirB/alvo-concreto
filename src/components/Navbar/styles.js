@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const Header = styled.header`
 
+height: 90px;
+max-height: 90px;
+
 .navbar {
   display: flex;
   justify-content: space-around; 
@@ -23,7 +26,7 @@ export const Header = styled.header`
 }
 
 .nav-link-custom {
-  font-size: 20px; 
+  font-size: 22px; 
   font-weight: 600;
   margin-right: 20px; 
   position: relative;
