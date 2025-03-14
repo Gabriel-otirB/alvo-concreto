@@ -5,30 +5,25 @@ import backgroundSecondary from '../../assets/images/background/background-1.png
 
 export const Template = styled.section`
 
-  display: flex;
-  flex-direction: column;
+  .container {
+  min-width: 80vh;
+  max-height: 90vh;
+  padding: 30px 0 34px 0;
+  }
 
   .bg-default {
-  padding: 30px 0 34px 0;
   background-color: var(--bg-default-1);
   background-image: url(${backgroundDefault});
   background-size: cover;
-  /* Certifica-se de cobrir toda a área */
   background-position: center;
-  /* Centraliza a imagem */
 }
 
 .bg-secondary {
-  padding: 30px 0 34px 0;
   background-color: var(--light-gray-color);
   background-image: url(${backgroundSecondary});
-  /* Corrigindo para background-image */
   background-size: cover;
-  /* Certifica-se de cobrir toda a área */
   background-position: center;
-  /* Centraliza a imagem */
 }
-
 
 #about-area ul li i {
   color: var(--green-color);

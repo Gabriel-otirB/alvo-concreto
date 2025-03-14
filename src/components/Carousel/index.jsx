@@ -4,9 +4,11 @@ import slide1 from '../../assets/images/carousel/slide1.jpg';
 import slide2 from '../../assets/images/carousel/slide2.jpg';
 import slide3 from '../../assets/images/carousel/slide3.jpg';
 
+import Line from '../../components/Line';
+
 const Carousel = () => {
   return (
-    <Section id="carousel" alt="carousel-section">
+    <Section id="carousel" alt="Carousel Section">
       <div id="mainCarousel" className="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" className="active"
@@ -45,6 +47,7 @@ const Carousel = () => {
         <div>
         </div>
       </div>
+      <Line />
     </Section>
   )
 }

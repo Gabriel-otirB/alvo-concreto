@@ -1,7 +1,7 @@
 import Carousel from '../../components/Carousel';
 import { Link } from 'react-router-dom';
 import Container from '../../components/Container';
-import Line from '../../components/Line';
+// import Line from '../../components/Line';
 import LogoTitle from '../../components/LogoTitle';
 import MainTitle from '../../components/MainTitle';
 
@@ -9,10 +9,8 @@ const Main = () => {
   return (
     <>
       <Carousel />
-      <Line />
       <Container id="about-area">
         <div className="bg-default">
-          {/* <div className="div-line"></div> */}
           <div className="container">
             <div className="row">
               <div className="col-12">
@@ -49,7 +47,6 @@ const Main = () => {
           </div>
         </div>
       </Container>
-      <Line />
     </>
   )
 }
