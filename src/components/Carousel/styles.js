@@ -68,21 +68,21 @@ export const Section = styled.section`
   color: var(--black-color);
   border-color: var(--black-color);
   text-transform: uppercase;
-  width: 324px; 
+  width: 300px; 
   height: 63px; 
-  padding: 9px 18px; 
+  padding: 8px 8px; 
   border-radius: 54px; 
   border: 5px solid transparent; 
-  font-size: 23px; 
+  font-size: 24px; 
   font-weight: bold;
   transition: transform 0.3s ease-in-out, background-color 0.5s ease, border-color 0.5s ease;
   pointer-events: all;
 
   &:hover {
-  transform: scale(1.1);
+  transform: scale(1.06);
   color: var(--light-gray-color);
-  background-color: var(--black-color);
-  border-color: var(--black-color);
+  background-color: var(--bg-default-1);
+  border-color: var(--bg-default-1);
   }
 }
 

@@ -30,10 +30,10 @@ max-height: 90px;
   font-weight: 600;
   margin-right: 20px; 
   position: relative;
-  color: var(--black-color); 
+  color: var(--bg-default-1); 
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease; 
-  line-height: 1.5;
+  line-height: 1.4;
   white-space: nowrap;
 
   &.active {
@@ -54,15 +54,15 @@ max-height: 90px;
     left: 50%; 
     bottom: 5px; 
     width: 0;
-    height: 2px;
-    background-color: var(--black-color); 
+    height: 3px;
+    background-color: var(--bg-default-1); 
     transform: translateX(-50%); 
     transition: width 0.3s ease;
   }
 
   &:hover {
-    color: var(--black-color); 
-    transform: scale(1.1); 
+    color: var(--bg-default-1); 
+    transform: scale(1.06); 
   
   &::after {
     width: 100%; 
