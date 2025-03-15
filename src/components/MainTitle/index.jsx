@@ -1,4 +1,5 @@
 import { Title } from './styles';
+import PropTypes from 'prop-types';
 
 const MainTitle = ({ children }) => {
   return (
@@ -7,5 +8,9 @@ const MainTitle = ({ children }) => {
     </Title>
   )
 }
+
+MainTitle.propTypes = {
+  children: PropTypes.node, 
+};
 
 export default MainTitle

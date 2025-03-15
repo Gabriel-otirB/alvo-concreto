@@ -1,11 +1,14 @@
 import Carousel from '../../components/Carousel';
 import { Link } from 'react-router-dom';
 import Container from '../../components/Container';
-// import Line from '../../components/Line';
 import LogoTitle from '../../components/LogoTitle';
 import MainTitle from '../../components/MainTitle';
 import ContentText from '../../components/ContentText';
 import ContentList from '../../components/ContentList';
+import DetailsButton from '../../components/DetailsButton';
+import PictureFrame from '../../components/PictureFrame';
+
+import about_image from '../../assets/images/about/about-section.jpg';
 
 const Main = () => {
   return (
@@ -19,7 +22,8 @@ const Main = () => {
                 <LogoTitle />
               </div>
               <div className="col-md-6">
-                <img className="img-fluid" src="" alt="Concreteira Alvo Concreto" />
+                {/* <PictureFrame ><img src={about_image} alt="Concreteira Alvo Concreto" /></PictureFrame> */}
+                <PictureFrame ><img src={about_image} alt="Concreteira Alvo Concreto" /></PictureFrame>
               </div>
 
               <div className="col-md-6">
@@ -43,7 +47,7 @@ const Main = () => {
                   <li><i className="fas fa-check"></i><span>Entregas pontuais e com garantia de qualidade</span>
                   </li>
                 </ContentList>
-                <Link to="about.html" className="btn-saiba-mais">Veja mais</Link>
+                <DetailsButton><Link to="/about" className="btn-saiba-mais">Veja mais</Link></DetailsButton>
               </div>
             </div>
           </div>

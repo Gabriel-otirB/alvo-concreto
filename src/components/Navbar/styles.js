@@ -52,7 +52,7 @@ max-height: 90px;
     content: '';
     position: absolute;
     left: 50%; 
-    bottom: 5px; 
+    bottom: 6px; 
     width: 0;
     height: 3px;
     background-color: var(--bg-default-1); 
@@ -87,12 +87,23 @@ max-height: 90px;
 }
 
 @media (max-width: 1108px) {
+
 .nav-link-custom {
   white-space: nowrap;
+  margin-right: 0px;
   }
 }
 
 @media (max-width: 992px) { 
+
+.nav-link-custom {
+    line-height: 1.1;
+
+    &::after {
+    left: 52.5%; 
+    bottom: 0.8px;
+    }
+}
 
 .navbar-brand i.logo-icon {
   margin-left: 30px; 

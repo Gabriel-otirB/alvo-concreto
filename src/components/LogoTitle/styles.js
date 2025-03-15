@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Title = styled.div`
   .logo-title {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;

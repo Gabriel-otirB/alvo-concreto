@@ -42,7 +42,7 @@ export const Section = styled.section`
   max-width: 700px;
   line-height: 0.9;
   color: var(--light-gray-color);
-  font-size: 65px; 
+  font-size: 70px; 
   font-weight: bold;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 1);
   }
@@ -51,7 +51,7 @@ export const Section = styled.section`
   max-width: 700px;
   line-height: 1.1;
   color: var(--light-gray-color);
-  font-size: 30px; 
+  font-size: 32px; 
   font-weight: 700;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 1);
   }
@@ -68,8 +68,8 @@ export const Section = styled.section`
   color: var(--black-color);
   border-color: var(--black-color);
   text-transform: uppercase;
-  width: 300px; 
-  height: 63px; 
+  width: 280px; 
+  height: 60px; 
   padding: 8px 8px; 
   border-radius: 54px; 
   border: 5px solid transparent; 
@@ -93,17 +93,17 @@ export const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; 
+  gap: 25px; 
   margin: 0 auto;
   background-color: var(--light-gray-color);
   border-radius: 54px;
   max-width: 200px;
-  height: 40px;
+  height: 36px;
   opacity: 0.7;
 
   button {
-  width: 26px; 
-  height: 26px; 
+  width: 25px; 
+  height: 25px; 
   border-radius: 50%;
   opacity: 0.7;
   background-color: var(--red-color);
@@ -116,7 +116,7 @@ export const Section = styled.section`
 
   &:hover {
   opacity: 1;
-  transform: scale(1.15);
+  transform: scale(1.1);
   } 
 }
 }
@@ -124,8 +124,10 @@ export const Section = styled.section`
 /* Responsivity */
 @media (max-width: 768px) {
 
-  .carousel-indicators {
-    height: 35px;
+  .carousel-indicators { 
+    gap: 20px; 
+    height: 34px;
+    width: 180px;
   }
 
   .carousel-caption h5 {
@@ -133,10 +135,10 @@ export const Section = styled.section`
   }
 
   .main-btn { 
-    font-size: 21px;
+    font-size: 22px;
     text-wrap: nowrap;
     margin-top: 20px;
-    width: 260px;
+    width: 250px;
   }
 
   p {
