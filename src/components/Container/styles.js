@@ -25,16 +25,6 @@ export const Template = styled.section`
   background-position: center;
 }
 
-#about-area ul li i {
-  color: var(--green-color);
-}
-
-#about-area .row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
 #about-area .col-md-6 img {
   border: 0.2rem solid var(--red-color);
   width: 80%;
@@ -49,26 +39,6 @@ export const Template = styled.section`
 #about-area .col-md-6 img:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-
-/* Lista na Seção "about-area" */
-ul#about-list {
-  padding-left: 0;
-  margin-left: 0;
-}
-
-ul#about-list li {
-  margin-left: 0;
-  padding-left: 1rem;
-  position: relative;
-}
-
-ul#about-list li i {
-  font-size: 1.5rem;
-}
-
-ul#about-list li span {
-  margin-left: 0.3rem;
 }
 
 /* Estilização do botão na área "sobre" */
