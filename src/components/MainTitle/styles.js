@@ -32,6 +32,8 @@ export const Title = styled.div`
 
   .main-title {
     text-align: center;
+    font-size: 48px;
+    margin-bottom: 12px;
 
     &::after {
     left: 50%;

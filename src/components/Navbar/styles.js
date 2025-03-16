@@ -121,7 +121,17 @@ max-height: 90px;
 button {
   margin-right: 10px;
 }
+}
 
+@media (max-width: 375px) {
+  button {
+    margin-right: 0px;
+  }
+
+  .navbar-brand i.logo-icon {
+    margin-left: 20px; 
+    margin-right: 0px;
+  }
 }
 `;
 

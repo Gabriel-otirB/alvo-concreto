@@ -23,4 +23,23 @@ export const Picture = styled.div`
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     }
   }
+
+  @media (max-width: 1400px) {
+    height: 100%;
+    width: 95%;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+    justify-content: center; 
+    align-items: center;  
+  
+  img {
+    width: 90%;
+    height: auto;
+    justify-content: center; 
+    align-items: center;  
+  }
+}
+
 `

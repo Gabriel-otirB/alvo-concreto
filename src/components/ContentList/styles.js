@@ -6,7 +6,7 @@ margin-top: 10px;
 padding-left: 0;
 margin-left: 0;
 font-size: 20px;
-font-weight: 500;
+font-weight: 550;
 color: var(--light-gray-color);
 display: flex;
 flex-direction: column;
@@ -23,6 +23,15 @@ li {
 
   span {
   margin-left: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  font-size: 22px;
+
+  li {
+    justify-content: center;
   }
 }
 `;

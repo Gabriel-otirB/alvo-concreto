@@ -40,4 +40,9 @@ a {
   text-decoration: none;
 }
 
-`
+input,
+textarea {
+  box-sizing: border-box;
+}
+  
+`;

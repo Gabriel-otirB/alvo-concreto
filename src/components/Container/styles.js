@@ -7,7 +7,7 @@ export const Template = styled.section`
 
   .container {
   min-width: 80vh;
-  max-height: 82vh;
+  max-height: none;
   padding: 34px 0 30px 0;
   }
 
@@ -24,4 +24,16 @@ export const Template = styled.section`
   background-size: cover;
   background-position: center;
 }
+
+@media (min-width: 1400px) {
+  max-height: 82vh;
+}
+
+@media (max-width: 768px) {
+    .container {
+      min-width: 100%;
+      padding: 20px;
+      max-height: none;
+    }
+  }
 `;

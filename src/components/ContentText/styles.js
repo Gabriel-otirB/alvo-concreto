@@ -1,16 +1,30 @@
 import styled from 'styled-components';
 
-export const Text = styled.p`
+export const Text = styled.div`
 
-  margin: 6px 0 6px 0;
-  color: var(--light-gray-color);
-  font-weight: 500;
-  line-height: 1.4;
-  font-size: 20px;
+  p {
+    margin: 6px 0;
+    color: var(--light-gray-color);
+    font-weight: 550;
+    line-height: 1.4;
+    font-size: 20px;
+  }
 
   @media (max-width: 768px) {
     .small {
       display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+  p { 
+    line-height: 1.2;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .sm-remove {
+    display: none;
     }
   }
 `

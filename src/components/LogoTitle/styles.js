@@ -30,4 +30,11 @@ export const Title = styled.div`
       transform: translateY(0); 
     }
   }
+
+  @media (max-width: 768px) {
+    .logo-title {
+      margin-bottom: 10px;
+      font-size: 34px;
+    }
+  }
 `;
