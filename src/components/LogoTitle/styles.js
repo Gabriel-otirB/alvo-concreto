@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Title = styled.div`
+    z-index: 0;
+
   .logo-title {
     margin-bottom: 25px;
     display: flex;

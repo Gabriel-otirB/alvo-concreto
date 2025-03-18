@@ -14,7 +14,7 @@ export const FooterArea = styled.footer`
     h4 {
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: var(--dark-gray-color);
     text-transform: uppercase;
     text-align: center;

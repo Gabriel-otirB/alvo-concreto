@@ -1,10 +1,11 @@
 import { Title } from './styles';
 import PropTypes from 'prop-types';
 
-const MainTitle = ({ children }) => {
+const MainTitle = ({ children, title }) => {
+
   return (
     <Title>
-      <h3 className="main-title">{children}</h3>
+      <h3 className={title}>{children}</h3>
     </Title>
   )
 }

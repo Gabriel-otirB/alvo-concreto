@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Title = styled.div`
 
-.main-title {
+//Primary
+.primary {
   font-size: 54px;
   color: var(--light-gray-color);
   text-transform: uppercase;
@@ -30,7 +31,7 @@ export const Title = styled.div`
 
 @media (max-width: 768px) {
 
-  .main-title {
+  .primary {
     text-align: center;
     font-size: 48px;
     margin-bottom: 12px;
@@ -46,6 +47,63 @@ export const Title = styled.div`
     left: 50%;
     transform: translateX(-50%);
     }
+  }
+}
+
+// Secondary
+.secondary {
+  font-size: 60px;
+  color: var(--dark-gray-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  margin-bottom: 24px;
+  line-height: 1.05;
+  opacity: 0; 
+  transform: translateY(-80px); 
+  animation: fadeInDrop 1.2s ease-out forwards; 
+
+  &::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  background-color: var(--dark-gray-color);
+  transition: 0.8s all;
+  transform: translateX(-50%);
+  }
+
+  &:hover::after {
+  width: 100%;
+  /* A linha se expande para 100% */
+  left: 50%;
+  /* Deixa a linha centralizada */
+  transform: translateX(-50%);
+  /* Mantém a centralização durante o efeito de expansão */
+}
+
+}
+
+@keyframes fadeInDrop {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+}
+
+@media (max-width: 768px) {
+
+  .secondary {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 12px;
   }
 }
 `;

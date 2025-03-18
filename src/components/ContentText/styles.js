@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 
-export const Text = styled.div`
+export const Text = styled.p`
 
-  p {
     margin: 6px 0;
     color: var(--light-gray-color);
     font-weight: 550;
     line-height: 1.4;
     font-size: 20px;
-  }
-
+  
   @media (max-width: 768px) {
     .small {
       display: none;
@@ -17,12 +15,11 @@ export const Text = styled.div`
   }
 
   @media (max-width: 768px) {
-  p { 
+   
     line-height: 1.2;
     text-align: center;
     font-size: 22px;
-  }
-
+  
   .sm-remove {
     display: none;
     }

@@ -6,6 +6,7 @@ export const Section = styled.section`
 .carousel-item {
   height: 80vh;
   overflow: hidden;
+  z-index: 15;
 }
 
 .carousel-item img {
@@ -17,7 +18,7 @@ export const Section = styled.section`
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 15;
 
   &:hover {
   filter: brightness(65.0%);
@@ -31,7 +32,7 @@ export const Section = styled.section`
   height: 100%;
   justify-content: center;
   text-align: center;
-  z-index: 1;
+  z-index: 15;
   max-width: 90%;
   padding: 20px;
   color: var(--light-gray-color);
@@ -42,7 +43,7 @@ export const Section = styled.section`
   max-width: 700px;
   line-height: 0.9;
   color: var(--light-gray-color);
-  font-size: 70px; 
+  font-size: 76px; 
   font-weight: bold;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 1);
   }
@@ -68,12 +69,12 @@ export const Section = styled.section`
   color: var(--black-color);
   border-color: var(--black-color);
   text-transform: uppercase;
-  width: 280px; 
+  width: 310px; 
   height: 60px; 
   padding: 8px 8px; 
   border-radius: 54px; 
   border: 5px solid transparent; 
-  font-size: 24px; 
+  font-size: 26px; 
   font-weight: bold;
   transition: transform 0.3s ease-in-out, background-color 0.5s ease, border-color 0.5s ease;
   pointer-events: all;
@@ -89,7 +90,7 @@ export const Section = styled.section`
 /* Indicators */
 .carousel-indicators {
   bottom: 18px; 
-  z-index: 15;
+  z-index: 16;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +132,7 @@ export const Section = styled.section`
   }
 
   .carousel-caption h5 {
-    font-size: 56px;
+    font-size: 60px;
   }
 
   .main-btn { 

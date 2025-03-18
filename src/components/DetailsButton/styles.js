@@ -9,11 +9,12 @@ export const Button = styled.div`
 .btn-saiba-mais {
   display: flex;
   align-items: start;
-  justify-content: start;
-  max-width: 176px;
+  justify-content: center;
+  max-width: 220px;
+  width: 220px;
   white-space: nowrap;
-  padding: 12px 20px;
-  font-size: 21px;
+  padding: 10px 20px;
+  font-size: 22px;
   color: #fff;
   background-color: var(--red-color);
   border-radius: 30px;
@@ -36,7 +37,7 @@ export const Button = styled.div`
   justify-content: center;
   
   .btn-saiba-mais {
-    width: 200px;
+    width: 180px;
     justify-content: center;
     padding: 8px 16px;
   }

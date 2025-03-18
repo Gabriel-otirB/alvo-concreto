@@ -47,7 +47,6 @@ const Carousel = () => {
         <div>
         </div>
       </div>
-      <Line />
     </Section>
   )
 }

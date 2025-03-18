@@ -4,4 +4,5 @@ export const DivLine = styled.div`
   background-color: var(--red-color);
   height: 4px;
   width: 100%;
+  z-index: 10;
 `

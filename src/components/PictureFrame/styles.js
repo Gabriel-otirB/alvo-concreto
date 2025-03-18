@@ -1,22 +1,22 @@
 import styled from 'styled-components';
 
 export const Picture = styled.div`
-  width: 90%;
-  height: 90%;
+  width: 97.5%;
+  height: 560px;
   display: flex;
   flex-direction: column;
-  justify-content: start; 
+  justify-content: start;
   align-items: start;
 
   img {
     border: 3px solid var(--red-color);
-    width: 88%;
-    height: 90%; 
-    margin-left: 15%;
+    width: 100%; /* Ajuste a largura da imagem para ocupar 100% do container */
+    height: 100%; /* Defina a altura para preencher o container */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    margin-left: 2%; /* Remova a margem para garantir que a imagem ocupe toda a largura */
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    object-fit: cover;
 
     &:hover {
       transform: scale(1.025);
@@ -25,21 +25,20 @@ export const Picture = styled.div`
   }
 
   @media (max-width: 1400px) {
-    height: 100%;
-    width: 95%;
+    height: 400px; /* Altura fixa em telas menores também */
+    width: 98%;
   }
 
   @media (max-width: 768px) {
     display: none;
-    justify-content: center; 
-    align-items: center;  
-  
-  img {
-    width: 90%;
-    height: auto;
-    justify-content: center; 
-    align-items: center;  
-  }
-}
+    justify-content: center;
+    align-items: center;
 
+    img {
+      width: 90%;
+      height: auto; /* Mantenha a proporção da imagem em telas menores */
+      justify-content: center;
+      align-items: center;
+    }
+  }
 `
