@@ -15,6 +15,7 @@ export const Title = styled.div`
 
   &::after {
   content: "";
+  border-radius: 20px;
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -66,6 +67,7 @@ export const Title = styled.div`
 
   &::after {
   content: "";
+  border-radius: 20px;
   position: absolute;
   bottom: -8px;
   left: 50%;
@@ -78,11 +80,8 @@ export const Title = styled.div`
 
   &:hover::after {
   width: 100%;
-  /* A linha se expande para 100% */
   left: 50%;
-  /* Deixa a linha centralizada */
   transform: translateX(-50%);
-  /* Mantém a centralização durante o efeito de expansão */
 }
 
 }

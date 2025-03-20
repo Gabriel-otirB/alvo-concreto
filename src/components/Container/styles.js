@@ -24,8 +24,7 @@ export const Template = styled.section`
     background-size: cover;
     background-position: center;
     width: 100%;
-    /* Remover height: 100% */
-    min-height: 60vh; /* Ajustar a altura mínima, dependendo do conteúdo */
+    min-height: 60vh;
     z-index: 1;
   }
 
@@ -35,8 +34,7 @@ export const Template = styled.section`
     background-size: cover;
     background-position: center;
     width: 100%;
-    /* Remover height: 100% */
-    min-height: 60vh; /* Ajustar a altura mínima */
+    min-height: 60vh;
   }
 
   @media (min-width: 1400px) {
@@ -47,13 +45,11 @@ export const Template = styled.section`
     .container {
       width: 100%;
       padding: 20px 20px 24px 20px;
-      /* Se necessário, ajustar o padding para evitar espaços indesejados */
       box-sizing: border-box;
     }
 
-    /* Ajustando o template para evitar quebras */
     display: block;
-    align-items: unset; /* Remover alinhamento de flexbox para um layout de bloco */
-    min-height: auto; /* Definir altura mínima como automática para que se ajuste ao conteúdo */
+    align-items: unset; 
+    min-height: auto;
   }
 `;

@@ -11,6 +11,7 @@ max-height: 90px;
   align-items: center;
   padding: 0;
   background-color: var(--light-gray-color); 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); 
 }
 
 .navbar-brand i.logo-icon {

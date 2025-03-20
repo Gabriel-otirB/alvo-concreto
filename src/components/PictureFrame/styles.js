@@ -10,10 +10,9 @@ export const Picture = styled.div`
 
   img {
     border: 3px solid var(--red-color);
-    width: 100%; /* Ajuste a largura da imagem para ocupar 100% do container */
-    height: 100%; /* Defina a altura para preencher o container */
-    object-fit: cover; /* Mantém a proporção da imagem */
-    margin-left: 2%; /* Remova a margem para garantir que a imagem ocupe toda a largura */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -24,8 +23,23 @@ export const Picture = styled.div`
     }
   }
 
+  // Rotate transition
+  img.rotate {
+  border-radius: 16px;
+  border: 3px solid var(--red-color);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+  will-change: transform;
+  backface-visibility: hidden;
+  image-rendering: smooth;
+
+  &:hover {
+  transform: scale(1.02) rotate(-0.5deg);
+  }
+}
+
   @media (max-width: 1400px) {
-    height: 400px; /* Altura fixa em telas menores também */
+    height: 400px; 
     width: 98%;
   }
 
@@ -36,7 +50,7 @@ export const Picture = styled.div`
 
     img {
       width: 90%;
-      height: auto; /* Mantenha a proporção da imagem em telas menores */
+      height: auto; 
       justify-content: center;
       align-items: center;
     }

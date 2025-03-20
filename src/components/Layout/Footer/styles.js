@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import backgroundImage from '../../assets/images/background/background-2.png';
+import backgroundImage from '../../../assets/images/background/background-2.png';
 
 export const FooterArea = styled.footer`
 
@@ -28,8 +28,7 @@ export const FooterArea = styled.footer`
 
     p {
     font-weight: bold;
-    font-size: 16px;
-    margin-top: 20px;
+    font-size: 18px;
     color: var(--footer-dev-gray);
     }
 
@@ -70,7 +69,7 @@ export const FooterArea = styled.footer`
     a {
     color: var(--dark-gray-color);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     transition: color 0.5s ease;
 
     &:hover {
@@ -86,7 +85,7 @@ export const FooterArea = styled.footer`
     a {
     color: var(--dark-gray-color);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     transition: color 0.5s ease;
 
@@ -96,4 +95,16 @@ export const FooterArea = styled.footer`
     }
 }
 
+@media (max-width: 768px) {
+    .footer-contact li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .footer-socials li {
+    display: inline-block;
+    margin: 0 8px;
+    }
+}
 `

@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Box = styled.div`
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 16px;
   max-width: 300px;
@@ -90,6 +91,8 @@ export const Box = styled.div`
     font-weight: bold;
     transition: all 0.3s ease, transform 0.3s ease;
     margin-bottom: 16px; 
+    width: 160px;
+    margin: 0 auto;
 
     &:hover {
     background-color: var(--red-color);
@@ -100,7 +103,22 @@ export const Box = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    .service-box {
+      max-width: 70%;
+    }
+  }
+
+  @media (max-width: 430px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 16px;
     max-width: 100%;

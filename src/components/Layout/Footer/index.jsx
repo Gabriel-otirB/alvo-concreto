@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="col-md-12 dev">
               <p>Desenvolvido por <a href="https://github.com/Gabriel-otirB"
                 target="_blank">Gabriel-otirB</a>
-                &copy; 2024</p>
+                &copy; {new Date().getFullYear()}</p>
             </div>
           </div>
         </div>
