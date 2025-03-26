@@ -26,7 +26,7 @@ const Main = () => {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <LogoTitle />
+                <LogoTitle animation='slide-down'/>
               </div>
               <div className="col-md-6">
                 <PictureFrame><img src={about_image} alt="Concreteira Alvo Concreto" /></PictureFrame>
@@ -124,7 +124,7 @@ const Main = () => {
             <div className="row">
               <div className="col-12">
                 <h3 className="main-title">
-                  <LogoTitle />
+                  <LogoTitle animation='slide-down'/>
                 </h3>
               </div>
               {/* <!-- Informações de Contato --> */}

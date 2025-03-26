@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Service } from './styles'
 import PictureFrame from '../../../../components/PictureFrame';
 import MainTitle from '../../../../components/MainTitle';
@@ -7,7 +8,7 @@ import TalkButton from '../../components/TalkButton';
 import Container from '../../../../components/Container';
 import LogoTitle from '../../../../components/LogoTitle';
 
-const ContentService = ({ title, buttonTitle, description, servicesList, image, side }) => {
+const ContentService = ({ title, buttonTitle, description, servicesList, image, side, animation }) => {
 
   const isInverted = side === 'inverting';
   
@@ -17,7 +18,7 @@ const ContentService = ({ title, buttonTitle, description, servicesList, image, 
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <LogoTitle />
+              <LogoTitle animation={animation} />
             </div>
             <Service>
               <div className={isInverted ? "col-md-6 order-md-2" : "col-md-6"}>
@@ -42,5 +43,15 @@ const ContentService = ({ title, buttonTitle, description, servicesList, image, 
     </Container>
   )
 }
+
+ContentService.propTypes = {
+  buttonTitle: PropTypes.node, 
+  title: PropTypes.node,
+  description: PropTypes.node,
+  servicesList: PropTypes.node,
+  image: PropTypes.node,
+  side: PropTypes.node,
+  animation: PropTypes.node,
+};
 
 export default ContentService;

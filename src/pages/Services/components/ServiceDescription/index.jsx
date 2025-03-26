@@ -1,4 +1,6 @@
 import { Description } from './styles'
+import PropTypes from 'prop-types';
+
 
 const TalkButton = ({ servicesList, side }) => {
 
@@ -14,5 +16,10 @@ const TalkButton = ({ servicesList, side }) => {
     </Description>
   )
 }
+
+TalkButton.propTypes = {
+  servicesList: PropTypes.node,
+  side: PropTypes.node,
+};
 
 export default TalkButton;

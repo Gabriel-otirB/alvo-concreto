@@ -12,6 +12,9 @@ export const Title = styled.div`
     font-size: 40px; 
     color: var(--light-gray-color);
     font-weight: bold;
+  }
+
+  .slide-down {
     opacity: 0; 
     transform: translateY(-80px); 
     animation: fadeInDrop 1.2s ease-out forwards; 

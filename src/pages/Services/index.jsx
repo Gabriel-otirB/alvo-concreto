@@ -129,6 +129,7 @@ const Services = () => {
     <>
       <ContentService
         title='Serviços de Entrega de Concreto'
+        titleAnimation=''
         description='
         Na Alvo Concreto, somos especializados em entrega pontual de concreto, atendendo obras de
         pequeno, médio e grande porte em qualquer lugar da cidade. Nosso objetivo é garantir a agilidade e
@@ -136,6 +137,7 @@ const Services = () => {
         servicesList={servicesList.delivery}
         buttonTitle='AGENDE SUA ENTREGA'
         image={DeliveryImage}
+        animation='slide-down'
       />
       <Line />
       <ContentService
