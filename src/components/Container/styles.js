@@ -24,7 +24,7 @@ export const Template = styled.section`
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 60vh;
+    min-height: 80vh;
     z-index: 1;
   }
 
@@ -46,6 +46,10 @@ export const Template = styled.section`
       width: 100%;
       padding: 20px 20px 24px 20px;
       box-sizing: border-box;
+    }
+
+    .bg-default {
+      min-height: 60vh;
     }
 
     display: block;

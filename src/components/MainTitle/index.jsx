@@ -12,6 +12,7 @@ const MainTitle = ({ children, title }) => {
 
 MainTitle.propTypes = {
   children: PropTypes.node, 
+  title: PropTypes.node
 };
 
 export default MainTitle

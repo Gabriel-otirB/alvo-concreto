@@ -7,6 +7,8 @@ export const Picture = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  margin: 0 auto;
+  padding: 0 10px;
 
   img {
     border: 3px solid var(--red-color);
@@ -35,6 +37,17 @@ export const Picture = styled.div`
 
   &:hover {
   transform: scale(1.02) rotate(-0.5deg);
+  }
+}
+
+ .slide {
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    border: solid 0.2rem var(--red-color);
+    transform: translateZ(0);
+
+    &:hover {
+    transform: translateY(-10px);
   }
 }
 
