@@ -35,6 +35,7 @@ export const TeamButton = styled.div`
 
   @media (max-width: 768px) {
     max-width: 90%;
+    padding: 12px 10px;
   }
 }
 `

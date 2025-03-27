@@ -44,4 +44,11 @@ export const CallToArea = styled.div`
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+    padding: 14px 20px 20px 20px;
+    p {
+        line-height: 1.1;
+    }
+}
+
 `

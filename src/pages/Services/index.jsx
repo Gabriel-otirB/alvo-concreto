@@ -126,6 +126,7 @@ const servicesList = {
 }
 
 const Services = () => {
+  
   return (
     <>
       <ContentService
@@ -144,9 +145,9 @@ const Services = () => {
       <ContentService
         title='Consultoria Técnica Especializada'
         description='
-        Na Alvo Concreto, oferecemos consultoria técnica especializada para projetos de construção, garantindo que seu empreendimento
-        seja executado com a máxima precisão e qualidade. Nosso time de profissionais experientes auxilia em todas as etapas,
-        desde a escolha dos materiais até o acompanhamento da execução da obra.'
+        <span className="sm-remove">Na Alvo Concreto, oferecemos consultoria técnica especializada para projetos de construção, garantindo que seu empreendimento
+        seja executado com a máxima precisão e qualidade.Nosso time de profissionais experientes auxilia em todas as etapas,
+        desde a escolha dos materiais até o acompanhamento da execução da obra.</span>'
         servicesList={servicesList.consultancy}
         buttonTitle='FAÇA SUA CONSULTORIA'
         image={ConsultancyImage}

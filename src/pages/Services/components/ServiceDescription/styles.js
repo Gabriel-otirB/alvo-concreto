@@ -29,4 +29,23 @@ export const Description = styled.div`
     animation: fa-flip 3s infinite;
 }
 
+@media (max-width: 768px) {
+  margin-top: -4px;
+  margin-bottom: -24px;
+  font-size: 22px;
+
+  .service-benefits i,
+  .service-benefits-2 i {
+    font-size: 22px;
+  }
+
+  .service-benefits i { 
+    margin-right: 10px;
+  } 
+
+  .service-benefits-2 i {
+    margin-right: 6px;
+  }
+}
+
 `

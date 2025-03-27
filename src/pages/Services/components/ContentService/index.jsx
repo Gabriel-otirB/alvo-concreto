@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Service } from './styles'
 import PictureFrame from '../../../../components/PictureFrame';
-import MainTitle from '../../../../components/MainTitle';
+import ServiceTitle from '../../components/ServiceTitle';
 import ContentText from '../../../../components/ContentText';
 import ServiceDescription from '../../components/ServiceDescription';
 import TalkButton from '../../components/TalkButton';
@@ -27,11 +27,9 @@ const ContentService = ({ title, buttonTitle, description, servicesList, image, 
                 </PictureFrame>
               </div>
               <div className={isInverted ? "col-md-6 order-md-1" : "col-md-6"}>
-                <MainTitle title='primary'>{title}</MainTitle>
+                <ServiceTitle title='primary'>{title}</ServiceTitle>
                 <ContentText>
-                  <p className="service-description">
-                    {description}
-                  </p>
+                  <p className="service-description" dangerouslySetInnerHTML={{ __html: description }} />
                 </ContentText>
                 <ServiceDescription servicesList={servicesList} side={side} />
                 <TalkButton buttonTitle={buttonTitle} />

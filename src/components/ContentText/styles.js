@@ -20,7 +20,7 @@ export const Text = styled.div`
   }
 
   @media (max-width: 768px) {
-   
+    margin-top: 10px;
     line-height: 1.2;
     text-align: center;
     font-size: 22px;
