@@ -33,9 +33,14 @@ export const Title = styled.div`
 @media (max-width: 768px) {
 
   .primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 48px;
     margin-bottom: 12px;
+    margin: 0 auto;
+    
 
     &::after {
     left: 50%;

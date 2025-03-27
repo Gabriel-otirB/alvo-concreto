@@ -11,6 +11,11 @@ export const Service = styled.div`
   margin: 0;
   padding: 0 20px;
 
+  @media (max-width: 768px) {
+  display: flex;
+  flex-direction: column;
+  }
+
   ul {
     margin: 0;
     padding: 0;
