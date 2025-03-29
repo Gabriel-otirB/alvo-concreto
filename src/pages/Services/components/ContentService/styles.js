@@ -36,4 +36,13 @@ export const Service = styled.div`
     animation: fa-flip 3s infinite;
 }
 
+@media (max-width: 768px) {
+  .service-benefits i { 
+    font-size: 18px;
+  }
+
+  .service-benefits-2 i { 
+    font-size: 22px;
+  }
+}
 `

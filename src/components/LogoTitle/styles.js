@@ -4,7 +4,7 @@ export const Title = styled.div`
     z-index: 0;
 
   .logo-title {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;

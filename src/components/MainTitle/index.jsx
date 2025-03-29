@@ -15,4 +15,4 @@ MainTitle.propTypes = {
   title: PropTypes.node
 };
 
-export default MainTitle
+export default MainTitle;

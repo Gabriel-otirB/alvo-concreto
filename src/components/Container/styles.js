@@ -26,6 +26,8 @@ export const Template = styled.section`
     width: 100%;
     min-height: 80vh;
     z-index: 1;
+    align-items: center;
+    display: flex;
   }
 
   .bg-secondary {

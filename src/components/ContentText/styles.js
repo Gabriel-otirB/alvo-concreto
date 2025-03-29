@@ -12,6 +12,10 @@ export const Text = styled.div`
       display: inline-block;
       margin: 6px 0;
     }
+
+    strong {
+      color: var(--red-color);
+    }
   
   @media (max-width: 768px) {
     .small {
