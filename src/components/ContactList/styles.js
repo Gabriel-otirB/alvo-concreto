@@ -45,4 +45,17 @@ ul {
     }
   }
 }
+
+@media (max-width: 640px) {
+  margin-top: 20px;
+  margin-bottom: -6px;
+
+  strong {
+    margin-left: 3px;
+  }
+
+  i {
+    font-size: 22px;
+   }
+}
 `;
