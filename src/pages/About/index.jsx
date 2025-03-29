@@ -7,7 +7,7 @@ import CallToMedia from './components/CallToMedia';
 import Line from '../../components/Line';
 
 import about_first from '../../assets/images/about/about-first.png';
-import about_second from '../../assets/images/about/about-second.png';
+import about_second from '../../assets/images/about/about-second.jpg';
 
 const About = () => {
   return (
