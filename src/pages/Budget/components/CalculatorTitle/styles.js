@@ -17,7 +17,7 @@ export const Title = styled.div`
   position: relative;
   margin-top: -20px;
   margin-bottom: 30px;
-
+  // Transition
   opacity: 0; 
   transform: translateY(60px); 
   animation: fadeInUp 1s ease-out forwards; 
@@ -34,14 +34,13 @@ export const Title = styled.div`
     }
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 830px) {
   .primary {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 48px;
+    font-size: 46px;
     margin-bottom: 12px;
     margin: 0 auto;
   }

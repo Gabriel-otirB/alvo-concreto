@@ -40,11 +40,10 @@ export const BudgetArea = styled.section`
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: ;
+    justify-content: center;
     max-width: 400px;
     margin: 0 1% 0 auto;
   }
-
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -114,5 +113,21 @@ export const BudgetArea = styled.section`
 .icon-item:hover i,
 .icon-item:hover small {
   color: var(--dark-red-color);
+}
+
+@media (max-width: 830px) {
+  
+  .left-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .wrapper-inputs {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
 }
 `

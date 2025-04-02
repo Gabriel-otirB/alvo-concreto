@@ -21,7 +21,8 @@ const Budget = () => {
               <div className="col-md-12">
                 <CalculatorTitle title='primary'>Calculadora de Concreto</CalculatorTitle>
               </div>
-
+              
+              <div className="col-md-6">
                 <div className='left-wrapper'>
                   <div className="icon-wrapper">
                     <div className="icon-container">
@@ -49,14 +50,15 @@ const Budget = () => {
                   </div>
                   <CalculatorInputText label='outro' placeholder='Outra concretagem...'>Outra concretagem? Digite-a abaixo:</CalculatorInputText>
                 </div>
+              </div>
 
               {/* <!-- Coluna para o formulário de cálculo --> */}
               <div className="col-md-6">
-                  <div className='wrapper-inputs'>
-                    <CalculatorInputNumber label='espessura' placeholder='Insira a espessura...'>Espessura (m):</CalculatorInputNumber>
-                    <CalculatorInputNumber label='largura' placeholder='Insria a largura...'>Largura (m):</CalculatorInputNumber>
-                    <CalculatorInputNumber label='comprimento' placeholder='Digite a espessura...'>Comprimento (m):</CalculatorInputNumber>
-                  </div>
+                <div className='wrapper-inputs'>
+                  <CalculatorInputNumber label='espessura' placeholder='Insira a espessura...'>Espessura (m):</CalculatorInputNumber>
+                  <CalculatorInputNumber label='largura' placeholder='Insria a largura...'>Largura (m):</CalculatorInputNumber>
+                  <CalculatorInputNumber label='comprimento' placeholder='Digite a espessura...'>Comprimento (m):</CalculatorInputNumber>
+                </div>
                 <div className="result-container"></div>
               </div>
               <CalculatorButton />

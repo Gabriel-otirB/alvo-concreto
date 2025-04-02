@@ -39,4 +39,9 @@ input{
   border-color: var(--red-color);
   box-shadow: 0 0 5px var(--red-color);
 }
+
+@media (max-width: 830px) {
+  margin: 0 auto;
+  width: 60%;
+}
 `;
