@@ -1,6 +1,5 @@
 import Carousel from './components/Carousel';
 import TalkTeamButton from './components/TalkTeamButton';
-import { Link } from 'react-router-dom';
 import Container from '../../components/Container';
 import LogoTitle from '../../components/LogoTitle';
 import MainTitle from '../../components/MainTitle';
@@ -21,7 +20,7 @@ const Main = () => {
     <>
       <Carousel />
       <Line />
-      <Container id="about-area">
+      <Container id="main-hero">
         <div className="bg-default">
           <div className="container">
             <div className="row">
@@ -49,7 +48,7 @@ const Main = () => {
                   <li><i className="fas fa-check"></i><span>Garantia de qualidade</span></li>
                   <li><i className="fas fa-check"></i><span>Projetos sustentaveis </span></li>
                 </ContentList>
-                <DetailsButton><Link to="/about" className="btn-saiba-mais">Veja mais</Link></DetailsButton>
+                <DetailsButton><a href="/about" className="btn-saiba-mais">Veja mais</a></DetailsButton>
               </div>
             </div>
           </div>
@@ -69,48 +68,56 @@ const Main = () => {
                 serviceDesc='Oferecemos serviços de entrega pontual de concreto em qualquer lugar da cidade,
                   garantindo agilidade e eficiência.'
                 icon='truck'
+                route='delivery'
               />
               <ServiceBox
                 titleService='Consultoria Técnica'
                 serviceDesc='Nossa equipe especializada oferece suporte técnico para garantir a escolha do
                   concreto ideal para o seu projeto.'
                 icon='hard-hat'
+                route='consultancy'
               />
               <ServiceBox
                 titleService='Planejamento de Obras'
                 serviceDesc='Ajudamos a planejar suas obras com precisão, otimizando recursos e reduzindo prazos
                   de execução.'
                 icon='calendar-check'
+                route='planing'
               />
               <ServiceBox
                 titleService='Projetos Personalizados'
                 serviceDesc='Desenvolvemos soluções de concreto sob medida, atendendo às especificações exclusivas
                   de cada obra.'
                 icon='drafting-compass'
+                route='customize'
               />
               <ServiceBox
                 titleService='Garantia de Qualidade'
                 serviceDesc='Realizamos testes rigorosos para assegurar a resistência e durabilidade do concreto
                   entregue.'
                 icon='shield-alt'
+                route='quality'
               />
               <ServiceBox
                 titleService='Soluções Sustentáveis'
                 serviceDesc='Trabalhamos com materiais eco-friendly para minimizar os impactos ambientais em suas
                   construções.'
                 icon='recycle'
+                route='sustainability'
               />
               <ServiceBox
                 titleService='Manutenção de Equipamentos'
                 serviceDesc='Realizamos a manutenção preventiva e corretiva de equipamentos para garantir sua
                   performance e durabilidade.'
                 icon='cogs'
+                route='maintenance'
               />
               <ServiceBox
                 titleService='Treinamento e Capacitação'
                 serviceDesc='Oferecemos treinamentos para equipes de obra, garantindo o uso adequado e seguro dos
                   materiais e equipamentos.'
                 icon='users-cog'
+                route='training'
               />
             </div>
           </div>

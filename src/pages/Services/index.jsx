@@ -10,11 +10,13 @@ import MaintenanceImage from '../../assets/images/services/services-maintenance.
 import TrainingImage from '../../assets/images/services/services-training.jpg';
 import CallToAction from './components/CallToArea';
 
+import { useEffect } from 'react';
+
 const servicesList = {
   delivery: {
     firstService: {
       title: 'Entrega rápida e confiável.',
-      icon: 'fa-solid fa-truck'
+      icon: 'fa-solid fa-truck',
     },
     secondService: {
       title: 'Concreto de alta qualidade para diferentes aplicações.',
@@ -126,7 +128,28 @@ const servicesList = {
 }
 
 const Services = () => {
-  
+
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'auto';
+
+    const hash = window.location.hash;
+
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'auto', block: 'start' });
+
+          setTimeout(() => {
+            window.scrollBy(0, -70);
+            document.documentElement.style.scrollBehavior = 'smooth';
+          }, 0);
+        }
+      }, 10);
+      
+    }
+  }, []);
+
   return (
     <>
       <ContentService
@@ -140,6 +163,7 @@ const Services = () => {
         buttonTitle='AGENDE SUA ENTREGA'
         image={DeliveryImage}
         animation='slide-down'
+        id='delivery'
       />
       <Line />
       <ContentService
@@ -152,6 +176,7 @@ const Services = () => {
         buttonTitle='FAÇA SUA CONSULTORIA'
         image={ConsultancyImage}
         side='inverting'
+        id='consultancy'
       />
       <Line />
       <ContentService
@@ -163,6 +188,7 @@ const Services = () => {
         servicesList={servicesList.planing}
         buttonTitle='PLANEJE SUA OBRA'
         image={PlaningImage}
+        id='planing'
       />
       <Line />
       <ContentService
@@ -175,6 +201,7 @@ const Services = () => {
         buttonTitle='PERSONALIZE SEU PROJETO'
         image={CustomizeImage}
         side='inverting'
+        id='customize'
       />
       <Line />
       <ContentService
@@ -186,6 +213,7 @@ const Services = () => {
         servicesList={servicesList.quality}
         buttonTitle='GARANTA QUALIDADE'
         image={QualityImage}
+        id='quality'
       />
       <Line />
       <ContentService
@@ -198,6 +226,7 @@ const Services = () => {
         buttonTitle='CONSTRUA O FUTURO'
         image={SustainabilityImage}
         side='inverting'
+        id='sustainability'
       />
       <Line />
       <ContentService
@@ -209,6 +238,7 @@ const Services = () => {
         servicesList={servicesList.maintenance}
         buttonTitle='TRABALHE COM SEGURANÇA'
         image={MaintenanceImage}
+        id='maintenance'
       />
       <Line />
       <ContentService
@@ -221,6 +251,7 @@ const Services = () => {
         buttonTitle='CAPACITE SUA EQUIPE'
         image={TrainingImage}
         side='inverting'
+        id='training'
       />
       <Line />
       <CallToAction />

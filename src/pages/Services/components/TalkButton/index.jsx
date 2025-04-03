@@ -4,7 +4,7 @@ import { TeamButton } from './styles'
 const TalkButton = ({ buttonTitle }) => {
   return (
     <TeamButton>
-      <a href="contact.html">{buttonTitle}</a>
+      <a href="/contact">{buttonTitle}</a>
     </TeamButton>
   )
 }

@@ -8,13 +8,13 @@ import TalkButton from '../../components/TalkButton';
 import Container from '../../../../components/Container';
 import LogoTitle from '../../../../components/LogoTitle';
 
-const ContentService = ({ title, buttonTitle, description, servicesList, image, side, animation }) => {
+const ContentService = ({ title, buttonTitle, description, servicesList, image, side, animation, id }) => {
 
   const isInverted = side === 'inverting';
   
   return (
-    <Container id="service-entrega-concreto">
-      <div className="bg-default">
+    <Container >
+      <div className="bg-default" id={id}>
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -50,6 +50,7 @@ ContentService.propTypes = {
   image: PropTypes.node,
   side: PropTypes.node,
   animation: PropTypes.node,
+  id: PropTypes.node,
 };
 
 export default ContentService;
