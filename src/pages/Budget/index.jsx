@@ -4,10 +4,43 @@ import CalculatorTitle from './components/CalculatorTitle';
 import CalculatorInputNumber from './components/CalculatorInputNumber';
 import CalculatorInputText from './components/CalculatorInputText';
 import CalculatorButton from './components/CalculatorButton';
+import { useState, useEffect } from 'react';
 
 import { BudgetArea } from './styles';
 
 const Budget = () => {
+
+  const [concreting, setConcreting] = useState('');
+  const [customConcreting, setCustomConcreting] = useState('');
+  const [thickness, setThickness] = useState('');
+  const [width, setWidth] = useState('');
+  const [length, setLength] = useState('');
+
+  const handleConcreting = (value) => {
+    if (value === concreting) {
+      value = '';
+    }
+
+    if (customConcreting !== '') {
+      setCustomConcreting('');
+    }
+
+    setConcreting(value);
+  }
+
+  const handleCustomConcreting = (value) => {
+    if (concreting !== '') {
+      setConcreting('');
+    }
+
+    setCustomConcreting(value);
+  }
+
+
+  // useEffect(() => {
+  //   alert(customConcreting);
+  // }, [customConcreting]);
+
   return (
     <>
       <BudgetArea id='budget'>
@@ -21,43 +54,58 @@ const Budget = () => {
               <div className="col-md-12">
                 <CalculatorTitle title='primary'>Calculadora de Concreto</CalculatorTitle>
               </div>
-              
+
               <div className="col-md-6">
                 <div className='left-wrapper'>
                   <div className="icon-wrapper">
                     <div className="icon-container">
                       <div className="icon-row">
                         <div className="icon-item">
-                          <i className="fas fa-kaaba laje" title="Laje"></i>
-                          <small>Laje</small>
+                          <button onClick={() => handleConcreting('Laje')} className={concreting === 'Laje' ? 'active' : ''}>
+                            <i className="fas fa-kaaba laje" title="Laje"></i>
+                            <small>Laje</small>
+                          </button>
                         </div>
                         <div className="icon-item">
-                          <i className="fa-regular fa-square piso" title="Piso"></i>
-                          <small>Piso</small>
+                          <button onClick={() => handleConcreting('Piso')} className={concreting === 'Piso' ? 'active' : ''}>
+                            <i className="fa-regular fa-square piso" title="Piso"></i>
+                            <small>Piso</small>
+                          </button>
                         </div>
                       </div>
                       <div className="icon-row">
                         <div className="icon-item">
-                          <i className="fas fa-archway viga" title="Viga"></i>
-                          <small>Viga</small>
+                          <button onClick={() => handleConcreting('Viga')} className={concreting === 'Viga' ? 'active' : ''}>
+                            <i className="fas fa-archway viga" title="Viga"></i>
+                            <small>Viga</small>
+                          </button>
                         </div>
-                        <div className="icon-item" title="Calçada">
-                          <i className="fas fa-square muro"></i>
-                          <small>Muro</small>
+                        <div className="icon-item" title="Muro">
+                          <button onClick={() => handleConcreting('Muro')} className={concreting === 'Muro' ? 'active' : ''}>
+                            <i className="fas fa-square muro"></i>
+                            <small>Muro</small>
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <CalculatorInputText label='outro' placeholder='Outra concretagem...'>Outra concretagem? Digite-a abaixo:</CalculatorInputText>
+                  <CalculatorInputText
+                    label='outro'
+                    placeholder={concreting ? concreting : 'Outra concretagem...'}
+                    customConcreting={customConcreting}
+                    handleCustomConcreting={handleCustomConcreting}
+                  >
+                    Outra concretagem? Informe-a abaixo:
+                  </CalculatorInputText>
                 </div>
               </div>
 
               {/* <!-- Coluna para o formulário de cálculo --> */}
               <div className="col-md-6">
                 <div className='wrapper-inputs'>
-                  <CalculatorInputNumber label='espessura' placeholder='Insira a espessura...'>Espessura (m):</CalculatorInputNumber>
-                  <CalculatorInputNumber label='largura' placeholder='Insria a largura...'>Largura (m):</CalculatorInputNumber>
-                  <CalculatorInputNumber label='comprimento' placeholder='Digite a espessura...'>Comprimento (m):</CalculatorInputNumber>
+                  <CalculatorInputNumber value={thickness} setValue={setThickness} label='espessura' placeholder='Insira a espessura...'>Espessura (m):</CalculatorInputNumber>
+                  <CalculatorInputNumber value={width} setValue={setWidth} label='largura' placeholder='Insira a largura...'>Largura (m):</CalculatorInputNumber>
+                  <CalculatorInputNumber value={length} setValue={setLength} label='comprimento' placeholder='Insira o comprimento...'>Comprimento (m):</CalculatorInputNumber>
                 </div>
                 <div className="result-container"></div>
               </div>

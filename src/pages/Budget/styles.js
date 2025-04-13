@@ -68,11 +68,11 @@ export const BudgetArea = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 2px solid var(--dark-red-color); /* Linha de divisão */
+  border-bottom: 2px solid var(--dark-red-color); 
 }
 
 .icon-row:last-child {
-  border-bottom: none; /* Remove a linha da última linha de ícones */
+  border-bottom: none; 
 }
 
 .icon-item {
@@ -80,39 +80,46 @@ export const BudgetArea = styled.section`
   border-right: 2px solid var(--dark-red-color);
   text-align: center;
   cursor: pointer;
-  flex: 1; /* Equaliza o tamanho dos ícones */
-}
+  flex: 1; 
 
-.icon-item:last-child {
-  border-right: none; /* Remove a linha da última coluna de ícones */
-}
+  &:last-child {
+  border-right: none; 
+  }
 
-.icon-item i {
+  i {
   font-size: 50px;
   margin-right: 5px;
   color: var(--red-color);
   transition: all 0.3s ease-in-out;
-}
+  }
 
-.icon-item i.piso {
+  i.piso {
   rotate: 10deg;
-}
+  }
 
-.icon-item small {
+  small {
   display: inline-block;
   transition: all 0.3s ease-in-out;
-}
-
-.icon-item small {
   margin-top: 5px;
   font-size: 30px;
   font-weight: bold;
   color: var(--dark-gray-color);
+  }
+
+  &:hover i,
+  &:hover small {
+    color: var(--dark-red-color);
+  }
 }
 
-.icon-item:hover i,
-.icon-item:hover small {
-  color: var(--dark-red-color);
+button {
+  border: none;
+}
+
+button.active {
+  i, small {
+    color: var(--dark-red-color);
+  }
 }
 
 @media (max-width: 830px) {

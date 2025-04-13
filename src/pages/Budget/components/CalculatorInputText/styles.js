@@ -5,6 +5,7 @@ export const InputArea = styled.div`
 width: 100%;
 
 input{
+  text-align: center;
   display: flex;
   justify-content: center;
   font-weight: bold;
