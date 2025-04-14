@@ -18,6 +18,10 @@ export const BudgetArea = styled.section`
     max-width: 1400px; 
   }
 
+  .loading {
+    margin-top: 12.5%;
+  }
+
   .bg-default {
     background-color: var(--bg-default-1);
     background-image: url(${backgroundDefault});
