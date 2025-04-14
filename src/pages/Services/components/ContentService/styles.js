@@ -11,38 +11,13 @@ export const Service = styled.div`
   margin: 0;
   padding: 0 20px;
 
-  @media (max-width: 768px) {
-  display: flex;
-  flex-direction: column;
-  }
-
   ul {
     margin: 0;
     padding: 0;
   }
 
-.service-benefits i,
-.service-benefits-2 i {
-    font-size: 20px;
-    color: var(--red-color);
-    margin-right: 6px;
-}
-
-.service-benefits i { 
-  animation: fa-beat 3s infinite;
-} 
-
-.service-benefits-2 i {
-    animation: fa-flip 3s infinite;
-}
-
-@media (max-width: 768px) {
-  .service-benefits i { 
-    font-size: 18px;
+  @media (max-width: 768px) {
+  display: flex;
+  flex-direction: column;
   }
-
-  .service-benefits-2 i { 
-    font-size: 22px;
-  }
-}
 `

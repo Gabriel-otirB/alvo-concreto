@@ -8,7 +8,7 @@ export const Title = styled.div`
   justify-content: center;
   align-items: center;
   line-height: 1.05;
-  font-size: 50px;
+  font-size: 44px;
   color: var(--light-gray-color);
   text-transform: uppercase;
   font-weight: bold;
@@ -43,7 +43,8 @@ export const Title = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 48px;
+    padding-top: 6px;
+    font-size: 44px;
     margin-bottom: 12px;
     margin: 0 auto;
   }

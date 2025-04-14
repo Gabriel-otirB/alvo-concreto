@@ -45,10 +45,29 @@ export const CallToArea = styled.div`
 }
 
 @media (max-width: 768px) {
+
     padding: 14px 20px 20px 20px;
+
     p {
         line-height: 1.1;
     }
+
+    .main-btn {
+    background-color: var(--red-color);
+    color: var(--light-gray-color);
+    font-size: 26px;
+    font-weight: bold;
+    padding: 8px 0px;
+    border: none;
+    width: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 }
 
 `
