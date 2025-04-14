@@ -127,7 +127,6 @@ button.active {
 }
 
 @media (max-width: 830px) {
-  
   .left-wrapper {
     max-width: 90%;
     margin: 0 auto;
@@ -139,6 +138,16 @@ button.active {
     flex-direction: column;
     justify-content: center;
   }
-  
+
+  .loading {
+    margin-top: 42.5%;
+  }
 }
+
+@media (max-width: 480px) { 
+  .loading {
+    margin-top: 35%;
+  }
+}
+
 `

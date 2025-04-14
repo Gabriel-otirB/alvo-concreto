@@ -8,9 +8,10 @@ justify-content: center;
 align-items: center;
 margin: 0 auto;
 width: 50%;
+max-width: 100%;
 padding: 20px 0;
 background-color: var(--bg-default-1);
-border: 2px solid var(--red-color);
+border: 3px solid var(--red-color);
 border-radius: 25px;
 /* Animação */
 animation: fadeInUp 0.3s ease-out forwards;
@@ -40,24 +41,31 @@ h3 {
 
 // Helmet
 i.logo-icon {
-  margin: auto 0;
-  color: var(--light-gray-color);
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto 0;
+  color: var(--light-gray-color);
   margin-right: 10px; 
   font-size: 30px; 
   --fa-animation-duration: 1.5s; 
 }
 
 @media (max-width: 830px) {
+  width: 90%;
+
   h3 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 46px;
+    font-size: 26px;
     margin-bottom: 12px;
     margin: 0 auto;
+  }
+
+  i.logo-icon { 
+    display: none;
   }
 }
 `;

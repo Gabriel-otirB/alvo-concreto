@@ -18,7 +18,7 @@ const Budget = () => {
   const [width, setWidth] = useState('');
   const [length, setLength] = useState('');
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const handleConcreting = (value) => {
     if (value === concreting) {
