@@ -12,7 +12,7 @@ const CallToTitle = ({ children, title }) => {
 
 CallToTitle.propTypes = {
   children: PropTypes.node, 
-  title: PropTypes.node
+  title: PropTypes.string
 };
 
 export default CallToTitle;

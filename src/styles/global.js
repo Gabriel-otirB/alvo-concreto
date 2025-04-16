@@ -12,6 +12,7 @@ export default createGlobalStyle`
   --red-color: #910404;
   --dark-red-color: #700303;
   --green-color: #00aa00;
+  --dark-green-color:rgb(1, 128, 1);
   --footer-dev-gray: #888888;
 }
 

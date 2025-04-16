@@ -9,7 +9,6 @@ import { BudgetArea } from './styles';
 
 import { useState, useEffect } from 'react';
 
-
 const Budget = () => {
 
   const [concreting, setConcreting] = useState('');
@@ -19,6 +18,8 @@ const Budget = () => {
   const [length, setLength] = useState('');
 
   const [loading, setLoading] = useState(false);
+
+  const [result, setResult] = useState(1);
 
   const handleConcreting = (value) => {
     if (value === concreting) {
@@ -40,7 +41,6 @@ const Budget = () => {
     setCustomConcreting(value);
   }
 
-
   // useEffect(() => {
   //   alert(customConcreting);
   // }, [customConcreting]);
@@ -60,7 +60,7 @@ const Budget = () => {
                 <div className="col-md-12 loading">
                   <Loading />
                 </div>
-              ) : (
+              ) : result === 0 ? (
                 <>
                   <div className="col-md-12">
                     <CalculatorTitle title='primary'>Calculadora de Concreto</CalculatorTitle>
@@ -121,6 +121,37 @@ const Budget = () => {
                     <div className="result-container"></div>
                   </div>
                   <CalculatorButton />
+                </>
+              ) : (
+                <>
+                  <div className="col-md-12">
+                    <CalculatorTitle title="primary">Calculadora de Concreto</CalculatorTitle>
+                    <div className="calculated-value">
+                      <h2>Concreto estimado: <strong>8m³</strong></h2>
+                    </div>
+                    
+                    <h2 className="send-quote">Envie agora o seu orçamento por e-mail ou WhatsApp!</h2>
+                  </div>
+
+                  <div className="quote-buttons-area">
+                    <div className="col-md-6">
+                      <button className="email-button">
+                        <i className="fas fa-envelope"></i> 
+                        <span className="rm-mobile">Enviar orçamento por E-mail</span> 
+                        <span className="rm-desktop">Enviar</span> 
+                      </button>
+                    </div>
+
+                    <div className="col-md-6">
+                      <button className="whatsapp-button">
+                        <i className="fab fa-whatsapp"></i> 
+                        <span className="rm-mobile">Enviar orçamento por WhatsApp</span>
+                        <span className="rm-desktop">Enviar</span> 
+                      </button>
+                    </div>
+                  </div>
+
+                  { result === 0 ? <CalculatorButton /> : <CalculatorButton  result={result} /> }
                 </>
               )}
             </div>

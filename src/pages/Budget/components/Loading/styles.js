@@ -10,7 +10,7 @@ margin: 0 auto;
 width: 50%;
 max-width: 100%;
 padding: 20px 0;
-background-color: var(--bg-default-1);
+background-color: var(--bg-default-2);
 border: 3px solid var(--red-color);
 border-radius: 25px;
 /* Animação */

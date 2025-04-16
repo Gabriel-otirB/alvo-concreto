@@ -8,7 +8,7 @@ const DetailsButton = ({ children }) => {
 }
 
 DetailsButton.propTypes = {
-  children: PropTypes.node, 
+  children: PropTypes.string, 
 };
 
 

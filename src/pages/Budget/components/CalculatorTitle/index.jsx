@@ -12,7 +12,7 @@ const CalculatorTitle = ({ children, title }) => {
 
 CalculatorTitle.propTypes = {
   children: PropTypes.node, 
-  title: PropTypes.node
+  title: PropTypes.string
 };
 
 export default CalculatorTitle;

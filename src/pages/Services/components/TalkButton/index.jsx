@@ -10,7 +10,7 @@ const TalkButton = ({ buttonTitle }) => {
 }
 
 TalkButton.propTypes = {
-  buttonTitle: PropTypes.node, 
+  buttonTitle: PropTypes.string, 
 };
 
 export default TalkButton;
