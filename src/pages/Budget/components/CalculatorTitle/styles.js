@@ -20,7 +20,7 @@ export const Title = styled.div`
   // Transition
   opacity: 0; 
   transform: translateY(60px); 
-  animation: fadeInUp 1s ease-out forwards; 
+  animation: fadeInUp 0.3s ease-out forwards; 
 }
 
 @keyframes fadeInUp {

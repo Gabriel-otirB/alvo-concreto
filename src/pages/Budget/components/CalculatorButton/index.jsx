@@ -1,22 +1,21 @@
 import { ButtonArea } from './styles';
 import PropTypes from 'prop-types';
 
-const CalculatorButton = ({ result }) => {
+const CalculatorButton = ({ result, onClick }) => {
 
-  return result === 0 ? (
+  return (
     <ButtonArea>
-      <button type="button" className="btn btn-custom">Calcular</button>
-    </ButtonArea>
-  ) : (
-    <ButtonArea>
-      <button type="button" className="btn btn-custom">Calcular novamente</button>
+      <button type="button" className="btn btn-custom" onClick={onClick}>
+        {result ? 'Calcular Novamente' : 'Calcular Volume'}
+      </button>
     </ButtonArea>
   );
 
 }
 
 CalculatorButton.propTypes = {
-  result: PropTypes.node
+  result: PropTypes.node,
+  onClick: PropTypes.func,
 };
 
 export default CalculatorButton;

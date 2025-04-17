@@ -17,7 +17,7 @@ export const Title = styled.div`
   .slide-down {
     opacity: 0; 
     transform: translateY(-80px); 
-    animation: fadeInDrop 1.2s ease-out forwards; 
+    animation: fadeInDrop 0.5s ease-out forwards; 
   }
 
   .logo-text i {

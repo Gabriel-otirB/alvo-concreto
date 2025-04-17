@@ -9,6 +9,8 @@ import { BudgetArea } from './styles';
 
 import { useState, useEffect } from 'react';
 
+import calculateConcreteVolume from '../../utils/operations';
+
 const Budget = () => {
 
   const [concreting, setConcreting] = useState('');
@@ -19,7 +21,7 @@ const Budget = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const [result, setResult] = useState(1);
+  const [result, setResult] = useState(0);
 
   const handleConcreting = (value) => {
     if (value === concreting) {
@@ -41,9 +43,31 @@ const Budget = () => {
     setCustomConcreting(value);
   }
 
-  // useEffect(() => {
-  //   alert(customConcreting);
-  // }, [customConcreting]);
+  const handleCalculateAgain = () => {
+    setResult(0);
+    setWidth('');
+    setLength('');
+    setThickness('');
+    setConcreting('');
+    setCustomConcreting('');
+  }
+
+  const handleCalculateVolume = async () => {
+    if (customConcreting !== '') {
+      setConcreting(customConcreting);
+    }
+
+    try {
+      setLoading(true);
+      const volume = await calculateConcreteVolume(thickness, width, length, concreting);
+      setResult(volume);
+    } catch (error) {
+      console.error('[Erro ao calcular o volume]:', error);
+    }
+    finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <>
@@ -114,44 +138,44 @@ const Budget = () => {
                   {/* Coluna para o formulário de cálculo  */}
                   <div className="col-md-6">
                     <div className='wrapper-inputs'>
-                      <CalculatorInputNumber value={thickness} setValue={setThickness} label='espessura' placeholder='Insira a espessura...'>Espessura (m):</CalculatorInputNumber>
+                      <CalculatorInputNumber value={thickness} setValue={setThickness} label='espessura' placeholder='Insira a espessura...'>Espessura (cm):</CalculatorInputNumber>
                       <CalculatorInputNumber value={width} setValue={setWidth} label='largura' placeholder='Insira a largura...'>Largura (m):</CalculatorInputNumber>
                       <CalculatorInputNumber value={length} setValue={setLength} label='comprimento' placeholder='Insira o comprimento...'>Comprimento (m):</CalculatorInputNumber>
                     </div>
                     <div className="result-container"></div>
                   </div>
-                  <CalculatorButton />
+                  <CalculatorButton result={result} onClick={handleCalculateVolume} />
                 </>
               ) : (
                 <>
                   <div className="col-md-12">
                     <CalculatorTitle title="primary">Calculadora de Concreto</CalculatorTitle>
                     <div className="calculated-value">
-                      <h2>Concreto estimado: <strong>8m³</strong></h2>
+                      <h2>Concreto estimado: <strong>{result}m³</strong></h2>
                     </div>
-                    
+
                     <h2 className="send-quote">Envie agora o seu orçamento por e-mail ou WhatsApp!</h2>
                   </div>
 
                   <div className="quote-buttons-area">
                     <div className="col-md-6">
                       <button className="email-button">
-                        <i className="fas fa-envelope"></i> 
-                        <span className="rm-mobile">Enviar orçamento por E-mail</span> 
-                        <span className="rm-desktop">Enviar</span> 
+                        <i className="fas fa-envelope"></i>
+                        <span className="rm-mobile">Enviar orçamento por E-mail</span>
+                        <span className="rm-desktop">Enviar</span>
                       </button>
                     </div>
 
                     <div className="col-md-6">
                       <button className="whatsapp-button">
-                        <i className="fab fa-whatsapp"></i> 
+                        <i className="fab fa-whatsapp"></i>
                         <span className="rm-mobile">Enviar orçamento por WhatsApp</span>
-                        <span className="rm-desktop">Enviar</span> 
+                        <span className="rm-desktop">Enviar</span>
                       </button>
                     </div>
                   </div>
 
-                  { result === 0 ? <CalculatorButton /> : <CalculatorButton  result={result} /> }
+                  <CalculatorButton result={result} onClick={handleCalculateAgain} />
                 </>
               )}
             </div>
