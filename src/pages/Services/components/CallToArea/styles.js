@@ -57,9 +57,9 @@ export const CallToArea = styled.div`
     color: var(--light-gray-color);
     font-size: 26px;
     font-weight: bold;
-    padding: 8px 0px;
+    padding: 8px 8px;
     border: none;
-    width: 300px;
+    width: 75%;
     display: flex;
     text-align: center;
     justify-content: center;

@@ -45,5 +45,9 @@ export const Description = styled.div`
     margin-right: 6px;
     font-size: 22px;
   }
+
+  li {
+    text-align: center;
+  }
 }
 `

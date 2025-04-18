@@ -36,7 +36,7 @@ export const Title = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 40px;
+    font-size: 44px;
     margin-bottom: 12px;
     margin: 0 auto;
     
@@ -51,6 +51,12 @@ export const Title = styled.div`
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 390px) { 
+    .primary {
+      font-size: 40px;
     }
   }
 }

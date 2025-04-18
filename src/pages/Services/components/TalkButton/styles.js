@@ -36,7 +36,7 @@ export const TeamButton = styled.div`
   @media (max-width: 768px) {
     margin: 0 auto;
     margin-top: 15px;
-    max-width: 100%;
+    max-width: 75%;
     display: flex;
     align-items: center;
     justify-content: center;

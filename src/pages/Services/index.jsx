@@ -56,9 +56,9 @@ const Services = () => {
       <ContentService
         title='Consultoria Técnica Especializada'
         description='
-        <span className="sm-remove">Na Alvo Concreto, oferecemos consultoria técnica especializada para projetos de construção, garantindo que seu empreendimento
-        seja executado com a máxima precisão e qualidade.Nosso time de profissionais experientes auxilia em todas as etapas,
-        desde a escolha dos materiais até o acompanhamento da execução da obra.</span>'
+        Na Alvo Concreto, oferecemos consultoria técnica especializada para projetos de construção, garantindo que seu empreendimento
+        seja executado com a máxima precisão e qualidade. Nosso time de profissionais experientes auxilia em todas as etapas,
+        desde a escolha dos materiais até o acompanhamento da execução da obra.'
         servicesList={servicesList.consultancy}
         buttonTitle='FAÇA SUA CONSULTORIA'
         image={ConsultancyImage}
@@ -95,8 +95,8 @@ const Services = () => {
         title='Garantia e Qualidade nos Projetos'
         description='
         Na Alvo Concreto, a garantia e qualidade são nossos principais compromissos. Cada projeto personalizado é desenvolvido com os mais altos padrões de qualidade, utilizando
-        materiais de primeira linha e técnicas avançadas para garantir que sua obra seja segura, durável e eficiente. Nossa equipe de profissionais está
-        sempre à disposição para assegurar que todos os detalhes atendam às normas e especificações exigidas.'
+        materiais de primeira linha e técnicas avançadas para garantir que sua obra seja segura, durável e eficiente.<span class="sm-remove">Nossa equipe de profissionais está
+        sempre à disposição para assegurar que todos os detalhes atendam às normas e especificações exigidas.</span>'
         servicesList={servicesList.quality}
         buttonTitle='GARANTA QUALIDADE'
         image={QualityImage}
@@ -108,7 +108,7 @@ const Services = () => {
         description='
         Na Alvo Concreto, estamos comprometidos com a sustentabilidade e com a redução do impacto ambiental em todas as nossas operações.
         Oferecemos soluções sustentáveis que priorizam o uso eficiente dos recursos, a redução de resíduos e a
-        implementação de práticas ecológicas em nossos projetos. Acreditamos que a construção responsável é fundamental para um futuro melhor.'
+        implementação de práticas ecológicas em nossos projetos.<span class="sm-remove">Acreditamos que a construção responsável é fundamental para um futuro melhor.</span>'
         servicesList={servicesList.sustainability}
         buttonTitle='CONSTRUA O FUTURO'
         image={SustainabilityImage}
