@@ -13,6 +13,16 @@ const Navbar = () => {
     }
   }, [location]);
 
+  const collapseNavbar = () => {
+    if (window.innerWidth < 992) {
+      const navbar = document.getElementById('navbarNavAltMarkup');
+      const bsCollapse = new window.bootstrap.Collapse(navbar, {
+        toggle: false,
+      });
+      bsCollapse.hide();
+    }
+  };
+
   return (
     <Header>
       <div className="container nav-container">
@@ -28,11 +38,45 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <NavLink className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"} to="/">Início</NavLink>
-              <NavLink className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"} to="/services">Serviços</NavLink>
-              <NavLink className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"} to="/budget">Orçamento</NavLink>
-              <NavLink className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"} to="/contact">Contato</NavLink>
-              <NavLink className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"} to="/about"><span>Sobre nós</span></NavLink>
+              <NavLink
+                className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"}
+                onClick={collapseNavbar}
+                to="/"
+              >
+                Início
+              </NavLink>
+
+              <NavLink
+                className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"}
+                onClick={collapseNavbar}
+                to="/services"
+              >
+                Serviços
+              </NavLink>
+
+              <NavLink
+                className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"}
+                onClick={collapseNavbar}
+                to="/budget"
+              >
+                Orçamento
+              </NavLink>
+
+              <NavLink
+                className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"}
+                onClick={collapseNavbar}
+                to="/contact"
+              >
+                Contato
+              </NavLink>
+
+              <NavLink
+                className={({ isActive }) => isActive ? "nav-item nav-link nav-link-custom active" : "nav-item nav-link nav-link-custom"}
+                onClick={collapseNavbar}
+                to="/about"
+              >
+                Sobre nós
+              </NavLink>
             </div>
           </div>
         </nav>
