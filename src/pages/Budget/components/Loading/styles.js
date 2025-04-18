@@ -53,19 +53,29 @@ i.logo-icon {
 
 @media (max-width: 830px) {
   width: 90%;
+  flex-direction: column;
 
-  h3 {
+  i.logo-icon {
+    margin: 0 auto 12px;
+    font-size: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 26px;
-    margin-bottom: 12px;
-    margin: 0 auto;
   }
 
-  i.logo-icon { 
-    display: none;
+  h3 {
+    text-align: center;
+    font-size: 26px;
+    margin: 0 auto;
   }
 }
+
+@media (max-width: 540px) { 
+  margin-top: -20%;
+}
+
+@media (max-width: 390px) { 
+  margin-top: 0%;
+}
+
 `;

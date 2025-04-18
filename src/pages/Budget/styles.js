@@ -4,24 +4,6 @@ import backgroundDefault from '../../assets/images/background/background-1.png';
 
 export const BudgetArea = styled.section`
 
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  width: 100%; 
-  min-height: 80vh; 
-  position: relative;
-
-  .container {
-    width: 100%; 
-    padding: 34px 0 40px 0; 
-    box-sizing: border-box; 
-    max-width: 1400px; 
-  }
-
-  .loading {
-    margin-top: 12.5%;
-  }
-
   .bg-default {
     background-color: var(--bg-default-1);
     background-image: url(${backgroundDefault});
@@ -245,10 +227,6 @@ button.active {
     justify-content: center;
   }
 
-  .loading {
-    margin-top: 42.5%;
-  }
-
   .calculated-value {
     max-width: 90%;
     margin: 0 auto;
@@ -286,13 +264,6 @@ button.active {
   .send-quote { 
     display: flex;
     max-width: 90%;
-  }
-  
-}
-
-@media (max-width: 480px) { 
-  .loading {
-    margin-top: 35%;
   }
 }
 
