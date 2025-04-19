@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import GlobalStyle from './styles/global.js';
-import Navbar from './components/Layout/navbar/index.jsx';
+import Navbar from './components/Layout/Navbar/index.jsx';
 import Footer from './components/Layout/Footer/index.jsx';
 import { ToastContainer, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
