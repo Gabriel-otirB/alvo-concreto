@@ -5,7 +5,7 @@ Landing page comercial desenvolvida para a empresa **Alvo Concreto**, com foco e
 https://github.com/user-attachments/assets/612a19a7-72df-42ea-a7b2-51f17c488b7b
 
 ## 🚀 Teste você mesmo!
-- Acesse o Portfolio: https://alvo-concreto.vercel.app/
+- Acessar aplicação: https://alvo-concreto.vercel.app/
 
 ## 🚧 Funcionalidades
 
