@@ -1,8 +1,29 @@
-# React + Vite
+# Alvo Concreto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page comercial desenvolvida para a empresa **Alvo Concreto**, com foco em apresentação de serviços, informações institucionais e facilitação do contato com clientes. O projeto foi desenvolvido com **React** e **JavaScript** utilizando o **Vite**, com layout responsivo construído com **CSS** e **Bootstrap**.
 
-Currently, two official plugins are available:
+https://github.com/user-attachments/assets/612a19a7-72df-42ea-a7b2-51f17c488b7b
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Teste você mesmo!
+- Acessar aplicação: [Alvo Concreto](https://alvo-concreto.vercel.app/)
+
+## 🚧 Funcionalidades
+
+- ✅ Página inicial com apresentação e chamada para ação
+- ✅ Página de serviços com lista das principais soluções oferecidas
+- ✅ Página "Sobre" com informações da empresa
+- ✅ Botões de contato via **WhatsApp** e **e-mail** para vendedores
+- ✅ Seção de **orçamento com calculadora de volume de concretagem**, que permite ao cliente estimar rapidamente a quantidade necessária de concreto com base em largura, altura e profundidade
+- ✅ Layout **totalmente responsivo** para dispositivos móveis e desktops
+
+## 🛠 Tecnologias Utilizadas
+
+- React
+- Vite
+- JavaScript
+- Bootstrap
+- CSS3
+- HTML5
+
+
+
