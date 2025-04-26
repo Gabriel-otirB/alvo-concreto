@@ -8,7 +8,7 @@ import CalculatorButton from './components/CalculatorButton';
 import Loading from './components/Loading';
 import { BudgetArea } from './styles';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import calculateConcreteVolume from '../../utils/operations';
 
